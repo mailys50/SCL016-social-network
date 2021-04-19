@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+  
+
+background: rgba(234, 211, 203, 0.5);
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+.main {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+ .main > * {
+    padding: 1em;
+}
+
+
+/* colocar una debajo de la otra */
+.record form {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+/*separa en bloques input y label*/
+.record form label {
+    display: block;
+}
+/*separa en bloques input y label*/
+.record form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.record form .buttonCheckIn {
+    grid-column: 1 / 1;
+}
+
+.record form button {
+    background: #E4BAD4; 
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.record form button:hover,
+.record form button:focus {
+    background: #9A04E0;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+ 
