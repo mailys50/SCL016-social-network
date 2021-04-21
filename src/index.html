@@ -6,244 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="flexboxgrid.css">
+  <!-- <link rel="stylesheet" href="flexboxgrid.css"> -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- home page -->
-      <div class="homePage">
-          <div class="container">
-              <div class="header">
-                  <div class="logo">
-                      <img src="img/Tlogo.png" alt="logo">
-                  </div>
-                  <div class="title">
-                      <h1>ourist places</h1>
-                  </div>
-              </div>
-          <div class="main">
-              <div class="descripcion">
-                <p>Tourist Places te ayuda no solo  a relacionarte con personas de todo el mundo , si no  a descubrir lugares impresionante.</p>
-              </div>
-              <div class="inicioRegistro">
-                <div class="e-mail">
-                  <input type="email" class="email" placeholder="E-mail" required>
-                </div> 
-                <div class="clave">
-                  <input type="password" class="contraseña" placeholder="Contraseña" required>
-                </div>
-                <div class="botonIniciar">
-                  <input type="button" class="botonInicioSesion" value="Iniciar Sesión">
-                </div>
-                <div class="recuperarContraseña">
-                  <button>¿ Olvidaste tu contraseña?</button>
-                </div>
-              </div>
-          <div class="invitacionARegistrarse">
-            <p>Unete a Tourist Places y comparte tu experiencia</p>
-          </div>
-          <div class="registrarse">
-            <button>Crear Cuenta</button>
-          </div>
-          </div>
-          </div>
-      </div>
-  <!-- Regitro de Usuario -->
-  <div class="continerRegistro">
-      <div class="header">
-          <div class="logo">
-              <img src="img/Tlogo.png" alt="logo">
-          </div>
-          <div class="tituloRegistro">
-              <h1 class="registroUsuario">Registro de Usuario</h1>
-          </div>
-      </div>
-      <div class="main">
-            <div class="record">            
-                <form action="">
-                    <p>
-                        <label>Name</label>
-                        <input type="text" class="inpNombres" placeholder="Name" required>
-                    </p>
-                     <p>
-                        <label>Surnames</label>
-                        <input type="text" class="inpApellido" placeholder="Surnames" required>
-                    </p>
-                    <p>
-                        <label>Date of birth</label>
-                        <input type="text" class="date" placeholder="Date of birth" required>
-                    </p>
-                     <p>
-                        <label>country</label>
-                        <input type="text" class="date" placeholder="country" required>
-                    </p>
-                   
-                    <p>
-                        <label>Email Adress</label>
-                        <input type="email" name="email">
-                    </p>
-                      <p>
-                        <label>Alternative Email</label>
-                        <input type="text" class="date" placeholder="Alternative Email" required>
-                    </p>
-                    <p>
-                        <label>Enter 6-digit password</label>
-                        <input type="tel" name="phone">
-                    </p>
-                    <p>
-                        <label>Confirm your password</label>
-                        <input type="text" name="affair">
-                    </p>
-                    <p class="buttonCheckIn">
-                        <button>
-                            check in
-                        </button>
-                    </p>
-                </form>
-            </div>
-      </div>
-   <!-- vista general -->
-    <div class="vistaGeneral">
-        <div class="header">
-            <div class="logo">
-                <img src="img/Tlogo.png" alt="logo">
-            </div>
-            <div class="fotoPerfil">
-                <img src="img/usuario1.png" alt="foto del usuario">
-            </div>
-            <div class="tu"></div>
-            <div class="menu">
-            <img src="img/menú1.png" alt="logo">
-            </div>   
-        </div>
-        <div class="main">
-            <div class="compartidoUsuario">
-                <div class="foto2"></div>
-                <div class="nombreUsuario"></div>
-            </div>
-            <div class="materialcompartido">
-                <div class="meGusta"></div>
-                <div class="estrella">
-                    <input type=image src="img/estrellaAzul.png" width="25" height="15">  
-                </div>
-                <div class="comentar">
-                    <input type=image src="img/mensaje.png" width="25" height="15">
-                </div>
-                <div class="compartir">
-                    <input type=image src="img/enviar.png" width="25" height="15">
-                </div>
-            </div>
-            <div class="conteo">
-                <div class="cantmegusta"> </div>
-                <div class="cantMensajes"></div>    
-            </div>
-            <div class="comentarios"></div>
-                <div class="textoComentarios"></div>
-               <div class="verComentarios">
-                   <input type="button" nombre="comentario" value="Ver Comentarios">
-               </div>
-            <div class="agregarComentarios">
-                <div class="fotosCompatidos">
-                <img src="img/usuario1.png" alt="foto del usuario">
-            </div>
-            <div class="nombre">
-            </div>
-               <input type="text" placeholder="Agregar Comentarios">
-            </div>
-          </div>  
-         <div class="footer">
-             <div class="inicio">
-                <img src="img/casa.png" alt="imagen de inicio">
-             </div>
-             <div class="favorito">
-                <img src="img/estrella.png" alt="imagen favoritos">
-             </div>
-             <div class="videoo">
-                 <img src="img/video.png" alt="imagen video"></div>
-             <div class="tienda">
-                 <img src="img/tienda.png" alt="foto del usuario"></div>
-             <div class="usuario">
-                 <img src="img/usuario1.png" alt="foto del usuario"></div>
- 
-      </div>
 
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item logged-out" style="display: none;">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#signinModal">Signin</a>
+      </li>
+      <li class="nav-item logged-out" style="display: none;">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Signup</a>
+      </li>
+      <li class="nav-item logged-in" style="display: none;">
+        <a class="nav-link" href="#" id="logout">Logout</a>
+      </li>
+    </ul>
   </div>
 
 
 
+  <!-- Regitro de Usuario -->
+  <div class="registroUsuario">
+    <div class="header">
+      <div class="logo">
+        <img src="img/Tlogo.png" alt="logo">
+      </div>
+      <div class="tituloRegistro">
+        <h2 class="registroUsuario">Registro de Usuario</h2>
+      </div>
+    </div>
+    <div class="main">
+      <div class="record"> 
+        <form id="signup-form">
+          <div class="form-group">
+            <input type="email" id="signup-email" class="form-control" placeholder="Title" required>
+          </div>
+          <div class="form-group">
+            <input type="password" id="signup-password" class="form-control" placeholder="Password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </form>
+      </div>
+        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- iniciar Sesion -->
+        <form  id="login-form">
+          <div class="subtitulo">
+            <h2>Iniciar Sesion</h2>
+          </div>
+            <div class="formRegistro">
+        
+            <label>Email Adress</label>
+            <input type="email" name="email" class="login-email">
+          
+          <p>
+            <label>Enter 6-digit password</label>
+            <input type="password" name="contraseña" class="login-password">
+          </p>
+          <button type="submit" id="botonInicioSesion" class="botonInicioSesion">"signup"</button>
+        </form> 
+       </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>   
+   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+  <script  src ="html.js"></script>
 
   <script type="module" src="main.js"></script>
 </body>
-
 </html>
 
-<!-- Extra small=xs desde dispositivos extra pequeños quiero que la columna abarque doce (hacia arriba)   Small=sm (de table a celulares smarphon) Medium= md (computadoras a tables)    large=lg (computadora televisores)-->
-<!-- <div class="col-sm-12">  -->
 
- <!-- <div class="main">
-          <form action="">
-          <div class="tituloNombre">
-          <label>FullName</label>              
-          </div>
-      <div class="name">
-          <input type="text" class="inpNombres" placeholder="Nombres" required>
-      </div>
-      <div class="tituloApellidos">
-         <p>Apellidos:</p>
-         </div>
-      <div class="Apellido">
-         <input type="text" class="inpApellido" placeholder="Apellidos" required>
-      </div>
-      <div class="tituloFechaN">
-         <p>Fecha de nacimiento:</p></div>
-      <div class="fecha">
-          <input type="text" class="fechaNacimiento" placeholder="Fecha de nacimiento" required>
-      </div>
-      <div class="tituloPais">
-         <p>Pais:</p>
-      </div>
-      <div class="pais">
-         <input type="text" class="paisOrigen" placeholder="Pais" required>
-      </div>
-      <div class="tituloEmail">
-         <p>E-mail:</p>
-      </div>
-      <div class="email">
-          <input type="text" class="correo" placeholder="E-mail" required>
-      </div>
-      <div class="tituloEmailALtern">
-          <p>E-mail Alternativo:</p>
-      </div>
-      <div class="emailAlt">
-          <input type="text" class="emailAternativo" placeholder="Ingrese E-mail alternativo" >
-      </div>
-      <div class="titulo">
-         <p>Ingresa clave de 6 digitos</p>
-      </div>
-      <div class="clave">
-        <input type="password" class="crearClave" placeholder="Ingesar clave" required>
-      </div>
-      <div class="tituloConfirClave">
-         <p>Confirme su clave</p></div>
-      <div class="confirmación">
-         <input type="password" class="confirmarClave" placeholder="Confirmar Clave" required>
-      </div>
-      <div class="registrar">
-         <button class="registrarse">Registrarse</button>
-      </div>
-  </div> -->

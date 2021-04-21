@@ -1,4 +1,30 @@
+/* .homePage{
+
+} */
+/* .paginaPrincipal { 
+    display: none;
+
+}.registroUsuario {
+    display: none;
+}
+.favorito{
+    display: none;  
+}
+.perfilUsuario{
+    display: none;
+}
+.fotosVideos{
+    display: none;
+}
+.listaContactos{
+    display: none;
+}
+.paquetesServicioss{
+    display: none;
+}
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -22,25 +48,25 @@ background: rgba(234, 211, 203, 0.5);
 
  .main > * {
     padding: 1em;
-}
+} */
 
 
 /* colocar una debajo de la otra */
-.record form {
+/* .record form {
     display: grid;
-    grid-template-columns: 1fr ;
-}
+    grid-template-columns: 1fr ; */
+/* } */
 /*separa en bloques input y label*/
-.record form label {
+/* .record form label {
     display: block;
-}
+} */
 /*separa en bloques input y label*/
-.record form p {
+/* .record form p {
     margin: 0;
     padding: 1em;
-}
-
-.record form .buttonCheckIn {
+} */
+/* para colocar la cantidad de columnas que deseas */
+/* .record form .buttonCheckIn {
     grid-column: 1 / 1;
 }
 
@@ -49,13 +75,13 @@ background: rgba(234, 211, 203, 0.5);
     border: 0;
     text-transform: uppercase;
     padding: 1em;
-}
-
-.record form button:hover,
+} */
+/* transformar el boton de un color a otro y darle un foco */
+/* .record form button:hover,
 .record form button:focus {
     background: #9A04E0;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
-}
+} */
  
