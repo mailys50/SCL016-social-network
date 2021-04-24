@@ -21,8 +21,10 @@ export const menu = () => {
         </li>
      </ul>
    </div>
-   <div class= "invitacion">
-   <p>Tourist Places te ayuda no solo  a relacionarte con personas de todo el mundo , si no  a descubrir o recordar lugares impresionante.</p>
+   <div class= "welcome">
+   <p class="menu">Quieres disfrutar de las  bellezas  naturales y creaciones hermosas, o has visitado lugares impresionates y quieres  compartir tu experiencia
+   resgistrate y unete a los apasionados por el turismo.
+  <p> Tourist Places </p> es una comunidad que te ayuda no solo  a relacionarte con personas de todo el mundo , si no  a descubrir lugares impresionante.</p>
         </div>
      
 `;

@@ -421,7 +421,21 @@ git branch -l (para ver en que rama estoy)
 ## FUNCIONALIDAD
 
 
-  ### Exportar e importar Los componentes
+  ### Configuracion de FIREBASE
+  -se entra a la pagina de FIREBASE con el email y se creo un nuevo proyecto con los siguientes pasos:
+  a-luego de cliquear el boton de nuevo proyecto, ingresas el nombre de tu proyecto, clip continuar;
+  b-si quieres trabajar permitiendo la orientacion, los informes y otras funciones de firebase activas el google analitytics si no la deshabilitas, luego clip a crear proyecto;
+  c-luego dentro del proyecto entramos a la casa o inicio y clip configuracion del proyecto;
+  d- nos vamos al final  de la pagina y damos clip en configurar para web "</>"
+  e-agregamos firebase a nuestra apicación  colocamos el nombre, sin habilitas el hossting registramos nuestra app;
+  f-se abre el codigo de configuracion que es el sdk de firebase este codigo lo colocamos en un archivo js que se creo;
+  los dos primeros que aparecen lo colocamos en el html;
+  g-volvemos a firebase donde habilitaremos la autentificacion y como podra acceder el usuario (gmail,google....) al habilitar google le señalamos nuestro correo y guardamos;
+  h-en firestore creamos nuestra base de datos la podemos crear en modo produccion o modo prueba en este caso fue creada en modo producción y luego listo;
+  j- en firestore hay que hacer una configuracion para guardar la informacion entramos a "reglas" y nos aparecera un codigo donde colocaremos "true" en ves de false y damos clip en publicar;
+  k- nos vamos a la documentación y realizamos los pasos que nos faltan como el codigo de configuración de la autenticación y el de firestore.alli también conseguiremos una guia para realizar parte de nuestro proyecto.
+
+  ### 
 
   - tambien nos guiamos por las exportaciones e importaciones existentes.
 

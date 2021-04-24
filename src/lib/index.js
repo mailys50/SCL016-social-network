@@ -1,7 +1,7 @@
 // aqui exportaras las funciones que necesites
 
 export const myFunction = () => {
-// registro de Usuario
+//registro de Usuario
 //  const checkInForm = document.querySelector("#checkin-form");
 
 //  checkInForm.addEventListener("submit", (e) =>{
@@ -28,7 +28,7 @@ export const myFunction = () => {
 //   const email = document.querySelector(".login-email").value;
 //   const password = document.querySelector(".login-password").value;
 
-//   // Autenticar usuario
+//    // Autenticar usuario
 //     auth.signInWithEmailAndPassword(email, password).then((userCredential) => {
 //     // resetear formulario
 //     signInForm.reset();
@@ -36,11 +36,11 @@ export const myFunction = () => {
 //    })
 //  });
 
-// cerrar sesion o salir de aplicacion
- //const logout= document.querySelector("#logout");
+// //cerrar sesion o salir de aplicacion
+//  const logout= document.querySelector("#logout");
 // logout.addEventListener("click", e =>{
 //   e.preventDefault();
-  //si elcierre es correcto aplica esta función
+// //  si elcierre es correcto aplica esta función
 //   auth.singOut().then(()=>{
 //     console.log("cerrada");
 //   })

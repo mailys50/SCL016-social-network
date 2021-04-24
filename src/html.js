@@ -12,9 +12,11 @@
     measurementId: "G-WNZHSJG29K"
   };
     // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+ 
+ firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
     const fs =firebase.firestore();
+    const provider = new firebase.auth.GoogleAuthProvider();
   
 
 

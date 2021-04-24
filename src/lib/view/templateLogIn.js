@@ -13,16 +13,22 @@ export const login = () => {
     </div>
     <div class="main">
       <div class="record"> 
-        <form id="login-form">
-          <div class="form-group">
-            <input type="email" id="login-email" class="form-control" placeholder="Title" required>
-          </div>
-          <div class="form-group">
-          <input type="password" id="login-password" class="form-control" placeholder="Password" required>
-        </div>
-        <button type="submit" class="buttonLogIn">Save changes</button>
-      </form>
-    </div>`
+      <form  id="login-form">
+      <div class="subtitulo">
+        <h2>Iniciar Sesion</h2>
+      </div>
+        <div class="formRegistro">
+    
+        <label>Email Adress</label>
+        <input type="email" name="email" class="login-email">
+      
+      <p>
+        <label>Enter 6-digit password</label>
+        <input type="password" name="contraseña" class="login-password">
+      </p>
+      <button type="submit" id="botonInicioSesion" class="botonInicioSesion">"Log In"</button>
+    </form> 
+   </div>`
     
     divLogIn.innerHTML=viewLogIn;
     return divLogIn;
