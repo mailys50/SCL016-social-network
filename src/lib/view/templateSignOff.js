@@ -1,12 +1,10 @@
-export const signoff = () => {
-    const divSignoff = document.createElement("div");
-    const viewSignoff =
-
-    `
+export const signOff = () => {
+  const divSignOff = document.createElement('div');
+  const viewSignOff = `
     <h1>salite de tu perfil</h1>
-
-    `
+    `;
     
-    divSignoff.innerHTML=viewSignoff;
-    return divSignoff;
+  divSignOff.innerHTML= viewSignOff;
+  return divSignOff;
+  
 }
