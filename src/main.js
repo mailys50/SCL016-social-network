@@ -1,21 +1,16 @@
 // Este es el punto de entrada de tu aplicacion
-import { myFunction } from './lib/index.js';
 import { menu } from './lib/view/templateMenu.js';
 import { changeRouter } from './lib/router.js';
-//inicializar aplicacion
+// inicializar aplicacion
 const init = () => {
-// CARGAR MENU 
-  document.getElementById('root').innerHTML= menu();
-  // document.getElementById("root").appendChild(checkin()); //no va aqui
-  // document.getElementById("root").appendChild(login()); //no va aqui
-  //pasar parametro a router
+  // CARGAR MENU
+  document.getElementById('root').innerHTML = menu();
+  // pasar parametro a router
   window.addEventListener('hashchange', () => {
-    
-    //para llamar al hash se utiliza window.location.hash
+    // para llamar al hash se utiliza window.location.hash
     console.log(window.location.hash);
     changeRouter(window.location.hash);
-  })
- }
-//aqui le decimos window cuando se cargue la pantalla vamos a llamar a init
+  });
+};
+// aqui le decimos window cuando se cargue la pantalla vamos a llamar a init
 window.addEventListener('load', init);
-myFunction();

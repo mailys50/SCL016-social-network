@@ -1,8 +1,7 @@
-export const contact = () => {
-  const divContact = document.createElement('div');
-  const viewContact = `
-    <body>
-    <div class='contactContainer'>
+export const favorite = () => {
+  const divFavorite = document.createElement('div');
+  const viewFavorite = `
+  <div class='favoriteContainer'>
       <div class='header'>
         <div class='logo'>
           <img src='img/logotipo.png' alt='logo' />
@@ -30,15 +29,15 @@ export const contact = () => {
           </li>
         </ul>
       </div>
-      <div class='containerContact'>
+      <div class='containerFavorite'>
         <div class='usuario'>
         <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
         </div>
       </div>
       <div>
-        <h2>Contact</h2>
+        <h2>Favorite</h2>
       </div>
-      <div class='ContactList'></div>
+      <div class='favoriteList'>aqui imagenes y videos favoritos</div>
       <div class='footer'>
       <div class='inicio'>
         <a title='home' href='#/start'><img src='img/casa.png' alt='home' /></a>
@@ -53,7 +52,8 @@ export const contact = () => {
         <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
       </div>
     </div> 
-    </div>`;
-  divContact.innerHTML = viewContact;
-  return divContact;
+    </div> `;
+
+  divFavorite.innerHTML = viewFavorite;
+  return divFavorite;
 };

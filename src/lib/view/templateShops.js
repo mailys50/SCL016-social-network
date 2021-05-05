@@ -1,62 +1,59 @@
 export const shops = () => {
-    const divShops = document.createElement("div");
-    const viewShops = `
-    <div class="shops">
-        <div class="header">
-          <div class="logo">
-            <img src="img/logotipo.png" alt="logo" />
+  const divShops = document.createElement('div');
+  const viewShops = `
+    <div class='shopsContainer'>
+        <div class='header'>
+          <div class='logo'>
+            <img src='img/logotipo.png' alt='logo' />
           </div>
-          <div class="title">
+          <div class='title'>
             <h1>ourist places</h1>
           </div>
         </div>
-        <div class="menu">
+        <div class='menu'>
           <ul>
             <li>
-              <a href="#/AddContact">Add Contact</a>
+              <a href='#/AddContact'>Add Contact</a>
             </li>
             <li>
-              <a href="#/Contact">Contact</a>
+              <a href='#/contact'>Contact</a>
             </li>
             <li>
-              <a href="#/favourite">Favourite </a>
+              <a href='#/favorite'>Favorite </a>
             </li>
             <li>
-              <a href="#/shops">Shops</a>
+              <a href='#/shops'>Shops</a>
             </li>
             <li>
-              <a href="#/generalView">start</a>
+              <a href='#/start'>start</a>
             </li>
           </ul>
         </div>
-        <div class="maincontactosUsuario">
-          <div class="usuario">
-            <img src="img/usuario1.png" alt="foto del usuario" />
+        <div class='containerShops'>
+          <div class='usuario'>
+          <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
           </div>
         </div>
         <div>
           <h2>Shops</h2>
         </div>
-        <div class="favoriteList">aqui imagenes y videos favoritos</div>
-        <div class="footer">
-          <div class="inicio">
-            <img src="img/casa.png" alt="imagen de inicio" />
-          </div>
-          <div class="favorito">
-            <img src="img/estrella.png" alt="imagen favoritos" />
-          </div>
-          <div class="videoo">
-            <img src="img/video.png" alt="imagen video" />
-          </div>
-          <div class="tienda">
-            <img src="img/tienda.png" alt="foto del usuario" />
-          </div>
-          <div class="usuario">
-            <img src="img/usuario1.png" alt="foto del usuario" />
-          </div>
+        <div class='favoriteList'>aqui imagenes y videos favoritos</div>
+        <div class='footer'>
+        <div class='inicio'>
+          <a title='home' href='#/start'><img src='img/casa.png' alt='home' /></a>
         </div>
+        <div class='favorito'>
+          <a title='favorite' href='#/favorite'><img src='img/estrella.png' alt='Favorite' /></a>
+        </div>
+        <div class='tienda'>
+          <a title='shops' href='#/shops'><img src='img/tienda.png' alt='shops' /></a>
+        </div>
+        <div class='usuario'>
+          <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
+        </div>
+      </div> 
       </div> `;
-  
-    divShops.innerHTML = viewShops;
-    return divShops;
-  };
+
+  divShops.innerHTML = viewShops;
+  return divShops;
+};

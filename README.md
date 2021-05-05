@@ -335,8 +335,9 @@ Este proyecto es una Red Social, pensado para aquellos usuarios amantes de las b
  ## Qué resuelve el producto 
  la mayoria de los usuarios debido a la pandemia no han podido disfrutar de esos paisajes y sitos que les encantaria conocer o que quieran volver a visitar y a traves de esta red social pueden pedir opinion, ver lugares que no han visitado y tambiem compartir su propia experienca
  
+
  ## para qué le servirá a estos usuarios.
- como distraccion para enfocerse un tiempo en lo que le gusta y chatear con la comunidad.
+ como distracción para enfocerse un tiempo en lo que le gusta y chatear con la comunidad.
 
  ## TITULO DEL PROYECTO
   
@@ -346,34 +347,35 @@ Este proyecto es una Red Social, pensado para aquellos usuarios amantes de las b
 ## PROTOTIPO DE BAJA FIDELIDAD:
 -Realizamos el prototipo de baja fidelidad para hacer un testeo con los posible usuarios.
 
- <img src="img/prototipoUno.png" alt="prototipoUno" width="200"/>
+ <img src="src/img/prototipo.png" alt="prototipoUno" width="200"/>
 
 ## TESTEO
 -Realizamos una encuesta para verificar que nuestro proyecto era aceptable.
+
+## Encuesta
+<img src="src/img/encuesta.png" alt="encuesta" width="200"/>
 
 
  
  y obtuvimos como resultado las siguientes respuesta:
  
- <img src="img/encuestaRespuesta1.png" alt="prototipoUno" width="200"/>
- <img src="img/encuestaRespuesta2.png" alt="prototipoUno" width="200"/>
- <img src="img/encuestaRespuesta3.png" alt="prototipoUno" width="200"/>
- <img src="img/encuestaRespuesta4.png" alt="prototipoUno" width="200"/>
- <img src="img/encuestaRespuesta5.png" alt="prototipoUno" width="1000"/>
-
+ 
+ 
+ 
  
  ## HISTORIA DE USUARIO
- las historias de usuario tomadas
- para nuestro prototipo fueron las siguientes:
+ las historias de usuario tomadas para nuestro prototipo fueron las siguientes:
  iniciamos con las siguientes Historias:
- <img src="img/historiaUsuario1.png" alt="prototipoUno" width="1000"/>
- pero al realizar el feedback nos recomendaron hacerlas mejor y obtuvimos de nuestros usuarios las siguientes historias:
- <img src="img/historia1.jpg" alt="prototipoUno" width="1000"/>
- <img src="img/historia2.png" alt="prototipoUno" width="1000"/>
- <img src="img/historia3.png" alt="prototipoUno" width="1000"/>
- <img src="img/historia4.png" alt="prototipoUno" width="1000"/>
-  <img src="img/historia5.png" alt="prototipoUno" width="1000"/>
 
+ <img src="src/img/historiaUno.png" alt="historiaUno" width="1000"/>
+
+ <img src="src/img/historiaDos.png" alt="historiaDos" width="1000"/>
+
+ <img src="src/img/like.png" alt="like" width="1000"/>
+
+ <img src="src/img/spa.png" alt="spa" width="1000"/>
+
+  <img src="src/img/test.png" alt="test" width="1000"/>
 
  ## PROTOTIPO DE ALTA FIDELIDAD
 
@@ -382,11 +384,8 @@ Este proyecto es una Red Social, pensado para aquellos usuarios amantes de las b
 
 ### opción 1
 
- <img src="img/prototipoopcion1.png" alt="prototipoUno" width="1000"/>
+ <img src="src\img\prototipo.png" alt="prototipo" width="1000"/>
 
-### opción 2
-
- <img src="img/prototipoopcion2.png" alt="prototipoUno" width="1000"/>
 
  ## PRIMER SPRINT
 -Nuestros usiarios eligieron la opción 2 y comenzamos a trabajar su estructura.
@@ -409,13 +408,9 @@ git branch -l (para ver en que rama estoy)
  1-  se le coloca un export para importar al main.js la vista creada y se pueda imprimir en el root cuando sea invocada, 
  2-se declara una constante nombre que sera igual a la funcion y dentro de esta una constante que contendra la estructura de esa vista entre comillas y retornamos su valor,
  3- luego en el main.js importamos esta funcion y la imprimimos a traves de la manipulacion dinamica del Dom.
- 
 
- -Primera vista: representada por el menu.
+ 4- se crean los template necesarios para la funcionaledad del proyecto.
 
- -Segunda , tercera y cuarta vista: juego de las opciones HTML, CSS, JS respectivamente con un boton de inicio que te redirige a la primera vista.
-
--Quinta vista: donde se felicita al usuario por terminar la jugada y pasa al siguiente nivel.
 
 
 ## FUNCIONALIDAD
@@ -435,7 +430,7 @@ git branch -l (para ver en que rama estoy)
   j- en firestore hay que hacer una configuracion para guardar la informacion entramos a "reglas" y nos aparecera un codigo donde colocaremos "true" en ves de false y damos clip en publicar;
   k- nos vamos a la documentación y realizamos los pasos que nos faltan como el codigo de configuración de la autenticación y el de firestore.alli también conseguiremos una guia para realizar parte de nuestro proyecto.
 
-  ### 
+  ### exportación e importación
 
   - tambien nos guiamos por las exportaciones e importaciones existentes.
 
@@ -443,10 +438,13 @@ git branch -l (para ver en que rama estoy)
 
 
 ## SEGUNDO SPRINT
+se consigue regitrar el usuario con su correo y contraseña, se crean los templates de cada vista
 
 
 ## TERCER SPRINT
-
+-se inician los test unitarios, 
+-se aplica la funcion del pase de una vista a otra,
+-se implementa las funciones de comentario, y la suma de los like y mensajes realizados.
 
 ## CUARTO SPRINT
 

@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>  
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div id="root"></div>
-  <!-- firebase --> 
-  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>   
-  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
-  <script type="module" src ="html.js"></script> 
-    <script type="module" src="main.js"></script>
+  <div id="root">
+ </div>
+  <!-- firebase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2//firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2//firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-messaging.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase/init.js"></script> -->
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyARvSJHY3FLJ298DlKSJg1nBxeSAXlZtnw",
+      authDomain: "red-social-turismo-5e33f.firebaseapp.com",
+      projectId: "red-social-turismo-5e33f",
+      storageBucket: "red-social-turismo-5e33f.appspot.com",
+      messagingSenderId: "643499053403",
+      appId: "1:643499053403:web:b2fc4aa74780b6214a4a7e",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script type="module" src="main.js"></script>
 </body>
+
 </html>
-
-
