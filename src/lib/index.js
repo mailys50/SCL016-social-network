@@ -1,20 +1,24 @@
 // autentificación de Usuario
-export const register = (email, password) => {
-  return firebase
-    .auth()
-    .createUserWithEmailAndPassword(email, password)
-    .then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
-      // console.log(errorCode);
-      // console.log(errorMessage);
-    });
+export const register = async (email, password) => {
+  let result = await firebase
+  .auth()
+  .createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+    return true;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    return false;
+    // ..
+    // console.log(errorCode);
+    // console.log(errorMessage);
+  });
+    return result;
+    
 };
 
 export const auth2 = (email2, password2) => {

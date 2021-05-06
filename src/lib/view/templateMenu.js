@@ -12,10 +12,10 @@ export const menu = () => {
     <div class='menu'>
       <ul>
         <li>
-          <a href='#/checkIn'>check In</a>
+          <a href='#/checkIn'>Check In</a>
         </li>
         <li>
-          <a href='#/logIn'>log In</a>
+        <a href='#/logIn'>Log In</a>
         </li>        
       </ul>
     </div>

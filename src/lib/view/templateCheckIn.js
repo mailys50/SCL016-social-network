@@ -10,24 +10,23 @@ export const checkin = () => {
         </div>
         <div class='title'>
           <h1>ourist places</h1>
-        </div>
-        <div class='tituloRegistro'>
-          <h2 class='User register'>User register</h2>
-        </div>
+        </div>       
       </div>
-      <div class='containerChekIn'>
-        <div class='record'>
-            <div class='formRegistro'>
-              <label>Email Adress</label>
-              <input type='email' name='email' class='checkin-email' placeholder='E-mail'>      
-              <label>Enter password</label>
-              <input type='password' name='contraseña' class='checkin-password' paceholder='password'>
-               <button id='buttonCheckIn' class='buttonCheckIn'>'Check In'</button>
-            </div>            
-            <div class='google'>
+      <div class='tituloRegistro'>
+        <h2 class='User register'>User register</h2>
+      </div>
+      <div class='chekIn'>
+        <div class='formChekIn'>
+          <label>Email Adress</label>
+            <input type='email' name='email' class='checkin-email' placeholder='E-mail'>      
+          <label>Enter password</label>
+            <input type='password' name='contraseña' class='checkin-password' paceholder='password'>
+            <button id='buttonCheckIn' class='buttonCheckIn'>'Check In'</button>
+          </div>            
+          <div class='google'>
             <img src='img/email.png' alt='email logo'>
-             <button id='buttonGoogle' class='buttonGoogle'>checkin with Google</button>
-            </div>  
+            <button id='buttonGoogle' class='buttonGoogle'>checkin with Google</button>
+          </div>  
         </div>
       </div>
     </div>`;
@@ -44,7 +43,7 @@ export const checkin = () => {
     let password = document.querySelector('.checkin-password');
     email = email.value;
     password = password.value;
-    register(email, password);
+    console.log(register(email, password));
     location.href = '#/start';
   });
 

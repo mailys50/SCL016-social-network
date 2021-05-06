@@ -7,7 +7,7 @@
 body {
   line-height: 1.6;
   font-family: "Quicksand", sans-serif;
-  background-image: url(img/playa.png);
+  background-image: url(img/Bahia.jpg);
   background-repeat: no-repeat;
   background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
   background-attachment: fixed; /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
@@ -19,13 +19,38 @@ body {
 
 .addContainer, .containerCheckin, .contactContainer, .favoriteContainer, .loginContainer, .menuContainer, .profileContainer, .recoverpassword, .shopsContainer, .startContainer {
   display: grid  inline-grid;
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
+  /* separacion de filas y columnas juntas */
+   grid-gap:   30px 10px;   
+  /* para aplicar la medida proporcionar se debe dar los espacios primero grid-gap*/
+   grid-template-columns: 1fr ;
+ /* grid-template-rows: 1fr 1fr 1fr; */
+  /* grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto; */
+  /* grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
-  
+   */
+}
+ .header{
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 1;
+ justify-self: stretch;
+}
+.menu{
+  justify-self: center;
+}
+.rootMenu{
+  justify-self: center;
+} 
+.record{
+justify-self: center;
 }
 .main {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
