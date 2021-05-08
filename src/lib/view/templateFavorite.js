@@ -1,6 +1,6 @@
 export const favorite = () => {
   const divFavorite = document.createElement('div');
-  const viewFavorite = `
+  const viewFavorite =  `
   <div class='favoriteContainer'>
       <div class='header'>
         <div class='logo'>

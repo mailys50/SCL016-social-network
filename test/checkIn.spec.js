@@ -5,7 +5,7 @@ mockfirestore.autoFlush();
 mockauth.autoFlush();
 
 global.firebase = firebasemock.MockFirebaseSdk(
-  // use null if your code does not use RTDB
+
   () => null,
   () => mockauth,
   () => mockfirestore
@@ -13,12 +13,12 @@ global.firebase = firebasemock.MockFirebaseSdk(
 
 
 
-import { signIn } from "../src/lib/index.js";
+import { register } from "../src/lib/index.js";
 
-describe('probando signIn', () => {
-  it('Debería poder iniciar sesion', () => {
-    return signIn('juan@gmail.com', '123456').then((user) => {
-        expect(user.email).toBe('juan@gmail.com')
+describe('probando register', () => {
+  it('Debería  registrar usuarios ', () => {
+    return register('bdmd@gmail.com', '123456').then((user) => {
+        expect(user.email).toBe('bdmd@gmail.com')
       })
   });
 })

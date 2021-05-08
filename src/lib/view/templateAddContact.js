@@ -1,6 +1,6 @@
 export const addContact = () => {
   const divAddContact = document.createElement('div');
-  const viewAddContact = `
+  const viewAddContact =  `
     <div class='addContainer'>
     <div class='header'>
       <div class='logo'>

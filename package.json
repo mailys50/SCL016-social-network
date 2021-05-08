@@ -37,6 +37,7 @@
     "node": ">=10"
   },
   "dependencies": {
+    "firebase-mock": "^2.3.2",
     "jet": "^0.6.6-0"
   }
 }

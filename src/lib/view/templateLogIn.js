@@ -1,4 +1,4 @@
-import { auth2 } from '../index.js';
+import { signIn } from '../index.js';
 import { google } from '../index.js';
 import { observer } from '../index.js';
 import { signOut } from '../index.js';
@@ -59,11 +59,11 @@ export const login = () => {
   const buttonLogIn = divLogIn.querySelector('#buttonLogIn');
   buttonLogIn.addEventListener('click', () => {
     console.log('escucho cick');
-    let email = document.querySelector('.login-email');
-    let password = document.querySelector('.login-password');
-    email = email.value;
-    password = password.value;
-    auth2(email, password);
+    let email2 = document.querySelector('.login-email');
+    let password2 = document.querySelector('.login-password');
+    email2 = email2.value;
+    password2 = password2.value;
+    signIn(email2, password2);
     location.href = '#/start';
   });
   // mensaje usuario regietrado

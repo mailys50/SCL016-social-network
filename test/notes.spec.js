@@ -1,15 +1,54 @@
- import MockFirebase from '../_mocks_/firebase-mock.js'
+import MockFirebase from "mock-cloud-firestore";
 
-  import { addNote}  from '../src/lib/index.js';
+const fixtureData = {
+  __collection__: {
+    notes: {
+      __doc__: {
+        abc123: {
+          title: "terminar la pildora",
+        },
+        abc125: {
+          title: "comprar trufas",
+        },
+      },
+    },
+  },
+};
 
+global.firebase = new MockFirebase(fixtureData, {
+  isNaiveSnapshotListenerEnabled: true,
+});
 
-describe('addNote', () => {
-  it('deberia  agregar una nota ', (done) => {
-    return addNote('me encanta ese lugar').then((data) => {
-    expect(data).toBe('mensaje agregado')
+import { addNote, getNotes } from "../src/lib/index.js";
 
+describe("addNote", () => {
+  it("Debería agregar una nota", (done) => {
+    return addNote("comprar pan").then((data) => {
+      const callback = (notes) => {
+        const result = notes.find((elemento) => {
+          return elemento.title === "comprar pan";
+        });
+        expect(result.title).toBe("comprar pan");
+        done();
+      };
+      getNotes(callback);
+    });
+  });
+});
 
-    })
-  })
-})
+describe("delteNote", () => {
+  it("Debería poder eliminar una nota con id: abc123", (done) => {
+    return deleteNote("abc123").then(() => {
+      const callback = (notes) => {
+        const result = notes.find((elemento) => {
+          return elemento.id === "abc123";
+        });
+        expect(result).toBe(undefined);
+        done();
+      };
+      getNotes(callback);
+    });
+  });
+});
+
 

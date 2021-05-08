@@ -6,7 +6,7 @@
 
 body {
   line-height: 1.6;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background-image: url(img/Bahia.jpg);
   background-repeat: no-repeat;
   background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
@@ -141,6 +141,9 @@ h1{
     transition: background-color 1s ease-out;
     outline: 0;
 } 
+.buttondelete{
+  width: 5%;
+}
 .footer{
   display: grid  inline-grid;
   display: flex;

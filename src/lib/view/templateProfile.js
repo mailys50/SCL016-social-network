@@ -1,6 +1,6 @@
 export const profile = () => {
   const divProfile = document.createElement('div');
-  const viewProfile = `
+  const viewProfile =  `
   <div class='profileContainer'>
       <div class='header'>
         <div class='logo'>

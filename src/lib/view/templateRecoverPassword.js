@@ -1,6 +1,6 @@
 export const recoverPassword = () => {
   const divRecoverPassword = document.createElement('div');
-  const viewRecoverPassword = `
+  const viewRecoverPassword =  `
     <div class='recoverpassword'>
         <div class='header'>
           <div class='logo'>

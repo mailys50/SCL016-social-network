@@ -43,7 +43,7 @@ export const checkin = () => {
     let password = document.querySelector('.checkin-password');
     email = email.value;
     password = password.value;
-    console.log(register(email, password));
+    register(email, password);
     location.href = '#/start';
   });
 

@@ -1,39 +1,13 @@
-// autentificación de Usuario
-export const register = async (email, password) => {
-  let result = await firebase
-  .auth()
-  .createUserWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    // Signed in
-    const user = userCredential.user;
-    return true;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    return false;
-    // ..
-    // console.log(errorCode);
-    // console.log(errorMessage);
-  });
-    return result;
-    
-};
-
-export const auth2 = (email2, password2) => {
+export const register = (email, password) => {
   return firebase
     .auth()
-    .signInWithEmailAndPassword(email2, password2)
-    .then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-    });
+    .createUserWithEmailAndPassword(email, password);
+    
+};
+export const signIn = (email2, password2) => {
+  return firebase
+    .auth()
+    .signInWithEmailAndPassword(email2, password2);
 };
 // base de datos
 export const firestore = () => {
@@ -69,6 +43,7 @@ export const google = () => {
       console.log('error', error);
       // ...
     });
+    
 };
 
 export const signOut = () => {
@@ -82,7 +57,7 @@ export const signOut = () => {
       console.log('error');
       
     });
-  };
+};
 // agregar nota en este caso recibe un string "textNewNote" con el texto de la nota es decir lo que escribio el usuario en el input
 // lo agregamos a nuestra coleccion de notas a un objeto que tiene un titulo y un estado en falso porqueporque todavia no se va a utilizar
 
@@ -98,16 +73,17 @@ export const delteNote = (idNote) => {
   return firebase.firestore().collection('notes').doc(idNote).delete()
 }
 // para traer todas las notas cada vez que se actualice en tiempo real gracias a onSnapshot actualiza
-export const getNote = (callback) => {
- return firebase.firestore().collection('notes')
-  .onSnapshot((querySnapshot) => {
-    const data = [];
-    querySnapshot.forEach ((doc) => {
-      data.push({ id: doc.id, ...doc.data() })
+export const getNotes  = (callback) => {
+  return firebase.firestore().collection('notes')
+    .onSnapshot((querySnapshot) => {
+      const data = [];
+      querySnapshot.forEach ((doc) => {
+        data.push({ id: doc.id, ...doc.data() })
+      })
+      callback(data);
     })
-    callback(data);
-  })
 }
+
 // mensaje
 export const observer = () => { 
   return firebase.auth().onAuthStateChanged((user) => {
@@ -120,9 +96,9 @@ export const observer = () => {
       message();
       // User is signed out
       // ...
-  }
+    }
   }); 
 };
-export const storage = () => { 
-  const storage = firebase.storage();
-};
+// export const storage = () => { 
+//   const storage = firebase.storage();
+// };
