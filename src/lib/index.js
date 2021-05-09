@@ -61,10 +61,10 @@ export const signOut = () => {
 // agregar nota en este caso recibe un string "textNewNote" con el texto de la nota es decir lo que escribio el usuario en el input
 // lo agregamos a nuestra coleccion de notas a un objeto que tiene un titulo y un estado en falso porqueporque todavia no se va a utilizar
 
-export const addNote = (textNewNote) => {
-  return firebase.firestore().collection('notes').add({
-    title: textNewNote,
-    state:false
+export const addComment = (textNewComment) => {
+  return firebase.firestore().collection('comments').add({
+    title: textNewComment,
+    date:new Date()
 
   })
 }

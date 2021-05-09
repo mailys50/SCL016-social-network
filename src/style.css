@@ -72,12 +72,14 @@ justify-self: center;
 ul{
   display: flex;
   color:#9A04E0 ;
+  list-style:none;
 }
 li{
   color:#9A04E0 ;
   padding: 9px;
   margin-top: 0%;
   margin-left: 0%;
+  list-style:none;
 }
 h2{
   display: grid  inline-grid;

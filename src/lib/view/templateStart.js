@@ -1,4 +1,4 @@
-import { addNote } from '../index.js';
+import { addComment } from '../index.js';
 export const start = () => {
   const divStart = document.createElement('div');
   const viewStart = `
@@ -41,7 +41,7 @@ export const start = () => {
   <div class='generalList'>
     <div class='userShared'>
       <div class='like'>
-        <input type='image' class='buttonLike' src='img/estrellaAzul.png' id='buttonLike' />
+      <input type='image' class='buttonLike' src='img/estrellaAzul.png' id='buttonLike' />
       </div>
       <div class='writeComment'>
         <input type='image' class='buttonCommet' src='img/mensaje1.png' id='buttonComment' />
@@ -59,7 +59,7 @@ export const start = () => {
       <label><img src='img/usuario1.png' alt='profile' /></label>
       <input type='text' name='comments' class='comments' placeholder='comments' />
       <div class='send'>
-        <input type='image' class='buttonSend' src='img/estrellaAzul.png' id='buttonSend' alt='enviar' />
+        <input type='image' class='buttonSend' src='img/enviar1.png' id='buttonSend' alt='enviar' />
       </div>
     </div>
   </div>
@@ -98,11 +98,9 @@ export const start = () => {
 // comemtarios
   const buttonSend = divStart.querySelector('#buttonSend');
   buttonSend.addEventListener('click', () => {
-    let note = document.querySelector('.comments');
-    note = note.value;
-    console.log(note);
-    document.querySelector('.commentsUser').innerHTML = note;
-    addNote();
+    let comment = document.querySelector('.comments').value;
+    document.querySelector('.commentsUser').innerHTML = comment;
+    addComment(comment);
   });
 
   return divStart;
