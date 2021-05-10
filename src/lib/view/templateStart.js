@@ -1,4 +1,5 @@
 import { addComment } from '../index.js';
+const localStorage = window.localStorage; 
 export const start = () => {
   const divStart = document.createElement('div');
   const viewStart = `
@@ -80,27 +81,35 @@ export const start = () => {
 </div>`;
 
   divStart.innerHTML = viewStart;
-// suma de me gusta
-  const buttonLike = divStart.querySelector('#buttonLike');
-   let like =0;  
+
+   // suma de like 
+   const buttonLike = divStart.querySelector('#buttonLike');
    buttonLike.addEventListener('click', () => {
-     like ++;
-     document.querySelector('.likeSum').innerHTML = like;
-// suma de comentarios  
-   });
-   const buttonComment = divStart.querySelector('#buttonComment');
-   let comment =0;  
-   buttonComment.addEventListener('click', () => {
-    comment ++;
-     document.querySelector('.commentSum').innerHTML = comment;
-  
-   });
+    if (localStorage.contador) {
+      localStorage.contador= parseInt(localStorage.contador) + 1;
+    }else {
+      localStorage.contador = 1
+    }
+    document.querySelector('.likeSum').innerHTML = localStorage.contador; 
+  });
+
 // comemtarios
   const buttonSend = divStart.querySelector('#buttonSend');
   buttonSend.addEventListener('click', () => {
     let comment = document.querySelector('.comments').value;
     document.querySelector('.commentsUser').innerHTML = comment;
     addComment(comment);
+  });
+  // suma de comentarios 
+  const buttonComment = divStart.querySelector('#buttonSend');
+  buttonComment.addEventListener('click', () => {
+    if (localStorage.contador) {
+      localStorage.contador= parseInt(localStorage.contador) + 1;
+    }else {
+      localStorage.contador = 1
+    }
+    document.querySelector('.commentSum').innerHTML = localStorage.contador;
+ 
   });
 
   return divStart;

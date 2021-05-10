@@ -1,13 +1,13 @@
 * {
-  margin: 0;
+  margin: 0.5%;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
   line-height: 1.6;
-  font-family: 'Quicksand', sans-serif;
-  background-image: url(img/Bahia.jpg);
+  font-family:Rockwell, sans-serif;
+  background-image: url(img/gaviota.jpg);
   background-repeat: no-repeat;
   background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
   background-attachment: fixed; /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
@@ -17,136 +17,129 @@ body {
   font-size: 100%;
 }
 
-.addContainer, .containerCheckin, .contactContainer, .favoriteContainer, .loginContainer, .menuContainer, .profileContainer, .recoverpassword, .shopsContainer, .startContainer {
+.menuContainer {
   display: grid  inline-grid;
-   grid-gap:   30px 10px;   
-  /* para aplicar la medida proporcionar se debe dar los espacios primero grid-gap*/
-   grid-template-columns: 1fr ;
- /* grid-template-rows: 1fr 1fr 1fr; */
-  /* grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto; */
-  /* grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
-  column-gap: 10px;
-  row-gap: 15px;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
-   */
+  /* separacion de filas y columnas juntas */
+  grid-gap:   0px 0px;              
+  grid-template-columns: 1fr ;
+ 
 }
- .header{
+.header{
   grid-column-start: 2;
   grid-column-end: five;
   grid-row-start: row1-start;
   grid-row-end: 1;
+  justify-self: stretch; 
  justify-self: stretch;
-}
-.menu{
-  justify-self: center;
-}
-.rootMenu{
-  justify-self: center;
-} 
-.record{
-justify-self: center;
-}
-.main {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-}
-
-.main > * {
-  padding: 1em;
-}
-.rootMenu {
-  background-color:  rgba(148, 171, 235, 0.6);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 72%;
-  padding: 0% 0;
-  color: black;
-  
-}
-ul{
-  display: flex;
-  color:#9A04E0 ;
-  list-style:none;
-}
-li{
-  color:#9A04E0 ;
-  padding: 9px;
-  margin-top: 0%;
-  margin-left: 0%;
-  list-style:none;
-}
-h2{
-  display: grid  inline-grid;
-  align-items: center; 
-}
-.welcome {
-  margin: 1px 1px 1px 1px;
-}
-
-/* colocar una debajo de la otra */
-.record {
-    display: grid;
-    grid-template-columns: 1fr ; 
- }
-/*separa en bloques input y label*/
-.label {
-    display: block;
-}
-/*separa en bloques input y label*/
-.checkin-email, .checkin-password {
-    margin: 0;
-    padding: 1em;
-}
-/* para colocar la cantidad de columnas que deseas */
-.record form .buttonCheckIn {
-    grid-column: 1 / 1;
-}
-title{
-  color: #fff;
+  justify-self: stretch; 
 }
 h1{
   margin: -42px 0px 0px 27px;
   color: #9A04E0;
 }
-.buttonLogIn, .buttonCheckIn, .buttonGoogle, .buttonSignOff {
-    background: #9A04E0; 
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-} 
-/* transformar el boton de un color a otro y darle un foco */
-.buttonLogIn, .buttonCheckIn:hover,
-.buttonLogIn, .buttonCheckIn:focus {
-    background: #b77cd3;
-    color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
-} 
 
-.buttonGoogle:hover,
-.buttonLogIn, .buttonCheckIn:focus {
-  background: #b77cd3;
-  color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
-} 
-.buttonSignOff:hover,
-.buttonSignOff:focus {
-  background: #b77cd3;
-  color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
-} 
-.buttondelete{
-  width: 5%;
-}
-.footer{
+.rootMenu {
   display: grid  inline-grid;
+  grid-template-columns: 100% ;
+  grid-gap:   30px 10px;  
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  padding: 10% ;
+  width: 278px;
+  height: 367px;
+  left: 41px;
+  top: 132px;
+
+/* font-family: Rockwell;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000; */ 
+
+  
+}
+p{
+  font-family: Rockwell;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
   display: flex;
-  padding: 8%;
+  align-items: center;
+  text-align: center;  
+  color: #000000;
+  
+}
+strong {
+  font-size: 25px;
+  padding: 0px;
+  text-align: center;
+}
+ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  list-style:none;
+}
+li{
+ 
+  padding: 6px;
+  margin-top: -3%;
+  margin-left: 5%;
+  list-style:none;
+  text-decoration: none;
+}
+a{
+  text-decoration: none; 
+}
+.menu1{
+  display: grid  inline-grid;
+  grid-template-columns: 1fr 1fr;
+
+} 
+.addContainer, .containerCheckin, .contactContainer, .favoriteContainer, .loginContainer, .menuContainer, .profileContainer, .recoverpassword, .shopsContainer, .startContainer {
+  display: grid  inline-grid;
+  /* separacion de filas y columnas juntas */
+   grid-gap:   30px 10px;   
+  /* para aplicar la medida proporcionar se debe dar los espacios primero grid-gap*/
+   grid-template-columns: 1fr ;
+}
+.header{
+  grid-column-start: 1;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 1;
+  justify-self: stretch;
+}
+.logo{
+  display: grid;
+}
+.tituloRegistro{
+  display: grid;
+}
+h2{
+  display: grid  inline-grid;
+  align-items: center; 
+  grid-gap:   30px 10px;  
+}
+.containerLogIn{
+  display: grid  inline-grid;
+  grid-template-columns: 1fr ;
+  width: 253px;
+  height: 180px;
+  left: 61px;
+  top: 117px;
+  background: #BBE3F0;
+
+}
+
+/* colocar una debajo de la otra */
+.record {
+    display: grid;
+   grid-template-columns: 1fr ;
 }

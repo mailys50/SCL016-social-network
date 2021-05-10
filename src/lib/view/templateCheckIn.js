@@ -2,7 +2,7 @@ import { register } from '../index.js';
 import { google } from '../index.js';
 export const checkin = () => {
   const divCheckIn = document.createElement('div');
-  const viewCheckIn = `
+  const viewCheckIn = /*html*/`
     <div class='containerCheckin'>
       <div class='header'>
         <div class='logo'>
@@ -17,14 +17,14 @@ export const checkin = () => {
       </div>
       <div class='chekIn'>
         <div class='formChekIn'>
-          <label>Email Adress</label>
+          <label class='adress'>Email Adress</label>
             <input type='email' name='email' class='checkin-email' placeholder='E-mail'>      
-          <label>Enter password</label>
+          <label class='password'>Enter password</label>
             <input type='password' name='contraseña' class='checkin-password' paceholder='password'>
             <button id='buttonCheckIn' class='buttonCheckIn'>'Check In'</button>
           </div>            
           <div class='google'>
-            <img src='img/email.png' alt='email logo'>
+            <img src='img/email.png' class='googleImg' alt='email logo'>
             <button id='buttonGoogle' class='buttonGoogle'>checkin with Google</button>
           </div>  
         </div>

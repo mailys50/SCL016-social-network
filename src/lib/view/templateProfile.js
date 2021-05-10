@@ -1,6 +1,6 @@
 export const profile = () => {
   const divProfile = document.createElement('div');
-  const viewProfile =  `
+  const viewProfile = /*html*/ `
   <div class='profileContainer'>
       <div class='header'>
         <div class='logo'>
@@ -11,6 +11,12 @@ export const profile = () => {
         </div>
       </div>
       <div class='menu'>
+      <div class='usuario'>
+        <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
+      </div>
+      <div class='back'>
+        <a id ='back'>back</a>
+      </div>
         <ul>
           <li>
             <a href='#/AddContact'>Add Contact</a>
@@ -30,9 +36,6 @@ export const profile = () => {
         </ul>
       </div>
       <div class='Profile'>
-        <div class='usuario'>
-        <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
-        </div>
       </div>
       <div>
         <h2>Profile</h2>
@@ -55,5 +58,10 @@ export const profile = () => {
     </div> `;
 
   divProfile.innerHTML = viewProfile;
+
+  const buttonBack = divProfile.querySelector("#back");
+buttonBack.addEventListener('click', e => {
+  history.back();
+});
   return divProfile;
 };
