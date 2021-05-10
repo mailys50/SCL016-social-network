@@ -19,7 +19,6 @@ body {
 
 .addContainer, .containerCheckin, .contactContainer, .favoriteContainer, .loginContainer, .menuContainer, .profileContainer, .recoverpassword, .shopsContainer, .startContainer {
   display: grid  inline-grid;
-  /* separacion de filas y columnas juntas */
    grid-gap:   30px 10px;   
   /* para aplicar la medida proporcionar se debe dar los espacios primero grid-gap*/
    grid-template-columns: 1fr ;
