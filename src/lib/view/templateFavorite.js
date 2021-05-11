@@ -1,5 +1,5 @@
 export const favorite = () => {
-  const divFavorite = document.createElement('div');
+  const divFavorite = document.createElement("div");
   const viewFavorite =  `
   <div class='favoriteContainer'>
       <div class='header'>
@@ -9,7 +9,10 @@ export const favorite = () => {
         <div class='title'>
           <h1>ourist places</h1>
         </div>
-      </div>
+      </div>      
+        <div class='usuario'>
+        <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
+        </div>
       <div class='menu'>
         <ul>
           <li>
@@ -29,14 +32,9 @@ export const favorite = () => {
           </li>
         </ul>
       </div>
-      <div class='containerFavorite'>
-        <div class='usuario'>
-        <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
-        </div>
-      </div>
       <div>
+      <div class='containerFavorite'>
         <h2>Favorite</h2>
-      </div>
       <div class='favoriteList'>aqui imagenes y videos favoritos</div>
       <div class='footer'>
       <div class='inicio'>

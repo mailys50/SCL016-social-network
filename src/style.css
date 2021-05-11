@@ -30,8 +30,6 @@ body {
   grid-row-start: row1-start;
   grid-row-end: 1;
   justify-self: stretch; 
- justify-self: stretch;
-  justify-self: stretch; 
 }
 h1{
   margin: -42px 0px 0px 27px;
@@ -49,20 +47,7 @@ h1{
   width: 278px;
   height: 367px;
   left: 41px;
-  top: 132px;
-
-/* font-family: Rockwell;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000; */ 
-
-  
+  top: 132px; 
 }
 p{
   font-family: Rockwell;
@@ -82,7 +67,7 @@ strong {
   text-align: center;
 }
 ul{
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;  
   list-style:none;
 }
@@ -97,6 +82,9 @@ li{
 a{
   text-decoration: none; 
 }
+.menu{
+  justify-self: center;
+} 
 .menu1{
   display: grid  inline-grid;
   grid-template-columns: 1fr 1fr;
@@ -109,6 +97,12 @@ a{
   /* para aplicar la medida proporcionar se debe dar los espacios primero grid-gap*/
    grid-template-columns: 1fr ;
 }
+/* .addContainer,.contactContainer, .favoriteContainer, .profileContainer, .recoverpassword, .shopsContainer, .startContainer {
+  margin: 0;
+  padding: 0; 
+  width: 1000% ; 
+  background-color:#8FCECA ; 
+}*/
 .header{
   grid-column-start: 1;
   grid-column-end: five;
@@ -140,6 +134,87 @@ h2{
 
 /* colocar una debajo de la otra */
 .record {
-    display: grid;
+   display: grid;
    grid-template-columns: 1fr ;
+   justify-self: center;
+}
+.buttonSend,  .back, .sendpassword{
+  width: 2%; height: 2%;
+}
+.buttonDelete {
+  display: none;
+}.paquetes, .hotel{
+  width: 110%;
+  border-radius: 10px;
+}
+.pasajes{
+  width: 50%;
+  border-radius: 10px;
+}
+.restaurant{
+  width: 80%;
+  border-radius: 10px;
+}
+.formRegistro,.formChekIn{
+  display: grid;
+  grid-template-columns: 60%;
+  /* separacion entre colummnas */
+  column-gap: 10px;
+  /* separacion entre filas */
+  row-gap: 10px;
+  background-color:  rgba(248, 248, 243, 0.6);
+}
+.buttonLogIn, .buttonCheckIn:hover,
+.buttonLogIn, .buttonCheckIn:focus {
+    background: #b77cd3;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+} 
+
+.buttonGoogle:hover,
+.buttonGoogle:focus {
+  background: #b77cd3;
+  color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+} 
+.buttonGoogle {
+  background: #fff; 
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+} 
+.buttonSignOff:hover,
+.buttonSignOff:focus {
+  background: #b77cd3;
+  color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+} 
+.buttondelete{
+  width: 5%;
+}
+.footer{
+  display: grid  inline-grid;
+  display: flex;
+  grid-gap:   0px 60px;   
+  /* para aplicar la medida proporcionar se debe dar los espacios primero grid-gap*/
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+}
+.userShared{
+  display: grid  inline-grid;
+  display: flex;
+  grid-gap:   30px 50px;   
+  /* para aplicar la medida proporcionar se debe dar los espacios primero grid-gap*/
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 8%;
+}
+.shops1{
+  display: grid;
+  grid-gap:   30px 50px;   
+  grid-template-columns: 1fr 1fr;
+  padding: 8%;
 }

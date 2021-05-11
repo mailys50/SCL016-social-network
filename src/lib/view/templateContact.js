@@ -1,5 +1,5 @@
 export const contact = () => {
-  const divContact = document.createElement('div');
+  const divContact = document.createElement("div");
   const viewContact = `
     <body>
     <div class='contactContainer'>
@@ -11,6 +11,10 @@ export const contact = () => {
           <h1>ourist places</h1>
         </div>
       </div>
+      <div class='usuario'>
+        <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
+        <div class='nombreUsuario'></div>
+        </div>
       <div class='menu'>
         <ul>
           <li>
@@ -30,10 +34,7 @@ export const contact = () => {
           </li>
         </ul>
       </div>
-      <div class='containerContact'>
-        <div class='usuario'>
-        <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
-        </div>
+      <div class='containerContact'>        
       </div>
       <div>
         <h2>Contact</h2>

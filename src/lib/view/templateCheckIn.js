@@ -2,7 +2,7 @@ import { register } from '../index.js';
 import { google } from '../index.js';
 export const checkin = () => {
   const divCheckIn = document.createElement('div');
-  const viewCheckIn = /*html*/`
+  const viewCheckIn = `
     <div class='containerCheckin'>
       <div class='header'>
         <div class='logo'>

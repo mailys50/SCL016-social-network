@@ -39,8 +39,8 @@ describe("addNote", () => {
 describe("delteNote", () => {
   it("Debería poder eliminar una nota con id: abc123", (done) => {
     return deleteNote("abc123").then(() => {
-      const callback = (notes) => {
-        const result = notes.find((elemento) => {
+      const callback = (comments) => {
+        const result = comments.find((elemento) => {
           return elemento.id === "abc123";
         });
         expect(result).toBe(undefined);

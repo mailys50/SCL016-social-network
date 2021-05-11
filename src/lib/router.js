@@ -47,26 +47,6 @@ export const changeRouter = (hash) => {
     return showTemplate(hash);
   }
 };
-const viewTmp = (routers) => {
-  const router = routers.substr(2, routers.length - 2)
-  const root = document.getElementById('root');
-  root.innerHTML = '';
-  switch (router) {
-    case 'home':
-      getNotes((notes) => {
-        root.innerHTML = '';        
-        root.appendChild(Home(notes));  
-      })
-      break;
-    case 'signIn':
-      root.appendChild(Login());
-      break;
-    default:
-      root.appendChild(Login());
-      break;
-  }
-}
- 
 // creamos la funcion showtemplate
 const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');

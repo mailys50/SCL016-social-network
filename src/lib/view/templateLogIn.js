@@ -4,7 +4,7 @@ import { observer } from "../index.js";
 import { signOut } from "../index.js";
 export const login = () => {
   const divLogIn = document.createElement("div");
-  const viewLogIn = /*html*/ `
+  const viewLogIn = `
   <div class='loginContainer'>
   <div class='header'>
     <div class='logo'>

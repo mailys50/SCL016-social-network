@@ -2,39 +2,40 @@ export const addContact = () => {
   const divAddContact = document.createElement('div');
   const viewAddContact =  `
     <div class='addContainer'>
-    <div class='header'>
-      <div class='logo'>
-        <img src='img/logotipo.png' alt='logo'>
+      <div class='header'>
+        <div class='logo'>
+          <img src='img/logotipo.png' alt='logo'>
+        </div>
+        <div class='title'>
+         <h1>ourist places</h1>
+        </div>
       </div>
-      <div class='title'>
-       <h1>ourist places</h1>
-      </div>
-    </div>
-    <div class='menu'>
-      <ul>
-        <li>
-        <a href='#/AddContact'>Add Contact</a>
-        </li>
-        <li>
-        <a href='#/contact'>Contact</a>
-        </li>
-        <li>
-          <a href='#/favorite'>Favorite </a>
-        </li>
-        <li>
-          <a href='#/shops'>Shops</a>
-        </li>
-        <li>
-          <a href='#/start'>start</a>
-        </li>
-      </ul>
-    </div>
-    <div class='containerAddContact'>
-      <div class='compartidoUsuario'>
-        <div class='foto2'> 
+      <div class='foto2'> 
         <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a></div>
         <div class='nombreUsuario'></div>
       </div>
+      <div class='menu'>
+        <ul>
+          <li>
+            <a href='#/AddContact'>Add Contact</a>
+          </li>
+          <li>
+            <a href='#/contact'>Contact</a>
+          </li>
+          <li>
+            <a href='#/favorite'>Favorite </a>
+          </li>
+          <li>
+            <a href='#/shops'>Shops</a>
+          </li>
+          <li>
+            <a href='#/start'>start</a>
+          </li>
+        </ul>
+      </div>
+      <div class='containerAddContact'>
+      <div class='compartidoUsuario'>
+        
       <div class='title'>
        <h2>Add Contact</h2>
       </div>

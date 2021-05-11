@@ -1,5 +1,5 @@
 export const menu = () => {
-  const viewMenu = /*html*/`
+  const viewMenu = `
   <div class='menuContainer'>
     <div class='header'>
       <div class='logo'>

@@ -58,30 +58,21 @@ export const signOut = () => {
       
     });
 };
-// agregar nota en este caso recibe un string "textNewNote" con el texto de la nota es decir lo que escribio el usuario en el input
-// lo agregamos a nuestra coleccion de notas a un objeto que tiene un titulo y un estado en falso porqueporque todavia no se va a utilizar
-
+// agregar nota en este caso recibe un string "textNewNote"
 export const addComment = (textNewComment) => {
   return firebase.firestore().collection('comments').add({
     title: textNewComment,
     date:new Date()
-
   })
 }
 // eliminar notas recibe como parametro el id de la nota que se desea eliminar
-export const delteNote = (idNote) => {
-  return firebase.firestore().collection('notes').doc(idNote).delete()
+export const deleteNote = (idNote) => {
+  console.log(idNote);
+  return firebase.firestore().collection('comments').doc(idNote).delete()
 }
 // para traer todas las notas cada vez que se actualice en tiempo real gracias a onSnapshot actualiza
 export const getNotes  = (callback) => {
-  return firebase.firestore().collection('notes')
-    .onSnapshot((querySnapshot) => {
-      const data = [];
-      querySnapshot.forEach ((doc) => {
-        data.push({ id: doc.id, ...doc.data() })
-      })
-      callback(data);
-    })
+  return firebase.firestore().collection('comments').get();
 }
 
 // mensaje
