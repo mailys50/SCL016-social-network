@@ -41,7 +41,7 @@ export const start = () => {
     </div>
     <div class='generalList'>
     <div class='usuario'>
-    <a title='profile' href='#/profile'><img src='img/usuarioDama.png' alt='profile' /></a>
+    <a title='profile' href='#/profile'><img src='img/usuarioDama.png' class= 'user' alt='profile' /></a>
   </div>
       <div class='public'>
         <img class='buttonPublic' src='img/glaciares.jpg'  alt="imagen">
@@ -63,7 +63,7 @@ export const start = () => {
       </div>
       <div class='commentsUser'></div>
         <div class='comment'>
-          <label><img src='img/usuario2.png' alt='profile' /></label>
+          <label><img src='img/usuario2.png' alt='profile' class= 'user'/></label>
           <input type='text' name='comments' class='comments' placeholder='comments' />
           <div class='send'>
             <input type='image' class='buttonSend' src='img/mas.png' id='buttonSend' alt='button Send' />
@@ -73,16 +73,16 @@ export const start = () => {
     </div>
     <div class='footer'>
       <div class='inicio'>
-        <a title='home' href='#/start'><img src='img/casa1.png' alt='home' /></a>
+        <a title='home' href='#/start'><img src='img/casa1.png' alt='home' class= 'home' /></a>
       </div>
       <div class='favorito'>
-        <a title='favorite' href='#/favorite'><img src='img/estrella1.png' alt='Favorite' /></a>
+        <a title='favorite' href='#/favorite'><img src='img/estrella1.png' class= 'start' alt='Favorite' /></a>
       </div>
       <div class='shops'>
-        <a title='shops' href='#/shops'><img src='img/tienda1.png' alt='shops' /></a>
+        <a title='shops' href='#/shops'><img src='img/tienda1.png' alt='shops' class= 'shops'/></a>
       </div>
       <div class='usuario'>
-        <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' /></a>
+        <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' class= 'user' /></a>
       </div>
     </div>
   </div>`;
@@ -113,6 +113,7 @@ export const start = () => {
     }
     document.querySelector('.commentSum').innerHTML = localStorage.contador;
   });
+
   const buttonComment = divStart.querySelector('.buttonCommet');
   buttonComment.addEventListener('click', () => {
     // Obtener la referencia del elemento body

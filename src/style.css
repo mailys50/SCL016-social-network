@@ -229,3 +229,12 @@ h2{
   padding: 10px;
   max-width: 800px;
 }
+.home, .start, .user{
+  width: 123%;
+}
+.shops{
+  width: 60%;
+}
+.buttonLike, .buttonShare, .buttonCommet{
+  width: 82%;
+}

@@ -35,7 +35,19 @@ export const favorite = () => {
       <div>
       <div class='containerFavorite'>
         <h2>Favorite</h2>
-      <div class='favoriteList'>aqui imagenes y videos favoritos</div>
+      <div class='favoriteList'>
+      </div>
+      <div class='public'>
+      <img class='buttonPublic1' src='img/img1.jpg'  alt="imagen">
+    </div>
+    <div class='public'>
+      <img class='buttonPublic2' src='img/img2.jpg'  alt="imagen">
+    </div>
+    <div class='public'>
+      <img class='buttonPublic3' src='img/img3.jpg'  alt="imagen">
+    </div><div class='public'>
+    <img class='buttonPublic4' src='img/img5.jpg'  alt="imagen">
+      </div>
       <div class='footer'>
       <div class='inicio'>
         <a title='home' href='#/start'><img src='img/casa.png' alt='home' /></a>
