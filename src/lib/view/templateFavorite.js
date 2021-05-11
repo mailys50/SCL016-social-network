@@ -1,5 +1,5 @@
 export const favorite = () => {
-  const divFavorite = document.createElement("div");
+  const divFavorite = document.createElement('div');
   const viewFavorite =  `
   <div class='favoriteContainer'>
       <div class='header'>

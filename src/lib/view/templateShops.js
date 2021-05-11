@@ -1,5 +1,5 @@
 export const shops = () => {
-  const divShops = document.createElement("div");
+  const divShops = document.createElement('div');
   const viewShops = `
     <div class='shopsContainer'>
         <div class='header'>

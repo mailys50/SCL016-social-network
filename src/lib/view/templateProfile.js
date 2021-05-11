@@ -59,7 +59,7 @@ export const profile = () => {
 
   divProfile.innerHTML = viewProfile;
 
-  const buttonBack = divProfile.querySelector("#back");
+  const buttonBack = divProfile.querySelector('#back');
   buttonBack.addEventListener('click', e => {
   history.back();
 });

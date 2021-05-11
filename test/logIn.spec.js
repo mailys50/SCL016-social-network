@@ -13,7 +13,7 @@ global.firebase = firebasemock.MockFirebaseSdk(
 
 
 
-import { signIn } from "../src/lib/index.js";
+import { signIn } from '../src/lib/index.js';
 
 describe('probando signIn', () => {
   it('Debería poder iniciar sesion', () => {

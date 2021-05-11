@@ -30,7 +30,7 @@ export const recoverPassword = () => {
       </div> `;
 
   divRecoverPassword.innerHTML = viewRecoverPassword;
-  const buttonBack1 = divRecoverPassword.querySelector("#back1");
+  const buttonBack1 = divRecoverPassword.querySelector('#back1');
   buttonBack1.addEventListener('click', e => {
   history.back();
 });

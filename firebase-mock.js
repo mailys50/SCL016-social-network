@@ -4,7 +4,7 @@
 //       return {
 //         add: (objData) => {
 //           return new Promise((resolve, reject) => {
-//             resolve("mensaje agregado");
+//             resolve('mensaje agregado');
 //           });
 //         },
 //       };

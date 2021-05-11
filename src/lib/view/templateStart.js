@@ -1,7 +1,7 @@
-import { deleteNote, getNotes, addComment } from "../index.js";
+import { deleteNote, getNotes, addComment } from '../index.js';
 const localStorage = window.localStorage;
 export const start = () => {
-  const divStart = document.createElement("div");
+  const divStart = document.createElement('div');
   const viewStart = `
   <div class='startContainer'>
     <div class='header'>
@@ -84,75 +84,50 @@ export const start = () => {
   divStart.innerHTML = viewStart;
 
   // suma de like
-  const buttonLike = divStart.querySelector("#buttonLike");
-  buttonLike.addEventListener("click", () => {
+  const buttonLike = divStart.querySelector('#buttonLike');
+  buttonLike.addEventListener('click', () => {
     if (localStorage.contador) {
       localStorage.contador = parseInt(localStorage.contador) + 1;
     } else {
       localStorage.contador = 1;
     }
-    document.querySelector(".likeSum").innerHTML = localStorage.contador;
+    document.querySelector('.likeSum').innerHTML = localStorage.contador;
   });
 
   // comemtarios
-  const buttonSend = divStart.querySelector("#buttonSend");
-  buttonSend.addEventListener("click", () => {
-    let comment = document.querySelector(".comments").value;
-    document.querySelector(".commentsUser").innerHTML = comment;
+  const buttonSend = divStart.querySelector('#buttonSend');
+  buttonSend.addEventListener('click', () => {
+    let comment = document.querySelector('.comments').value;
+    document.querySelector('.commentsUser').innerHTML = comment;
     addComment(comment);
     if (localStorage.contador) {
       localStorage.contador = parseInt(localStorage.contador) + 1;
     } else {
       localStorage.contador = 1;
     }
-    document.querySelector(".commentSum").innerHTML = localStorage.contador;
+    document.querySelector('.commentSum').innerHTML = localStorage.contador;
   });
-
-  // eliminar comentario
-  // const itemNote = (objNote) => {
-  //   const liElement = document.createElement('li');
-  //   liElement.classList.add('mdl-list__item');
-  //   liElement.innerHTML = `
-  //     <span class="listItemComment">
-  //       <span>${objNote.title}</span>
-  //     </span>
-  //     <a class="listItem" id="buttonDelete-${objNote.id}">
-  //       <i class="material-icons">delete</i>
-  //     </a>
-  //   `;
-  // agregando evento de click al btn eliminar una nota
-  //   liElement.querySelector(`#buttonDelete-${objNote.id}`)
-  //     .addEventListener('click', () => {
-  //       deleteNoteOnClick(objNote);
-  //   return liElement;
-  // })
-  //};
- 
-  const buttonComment = divStart.querySelector(".buttonCommet");
-  buttonComment.addEventListener("click", () => {
+  const buttonComment = divStart.querySelector('.buttonCommet');
+  buttonComment.addEventListener('click', () => {
     // Obtener la referencia del elemento body
 
-    var div = document.querySelector(".commentsUser");
-
+    const div = document.querySelector('.commentsUser');
+    div.innerHTML='';
     // Crea un elemento <table> y un elemento <tbody>
-    var tabla = document.createElement("table");
-    var tblBody = document.createElement("tbody");
+    const tabla = document.createElement('table');
+    const tblBody = document.createElement('tbody');
     getNotes().then((array) => {
-      array.forEach(data => {
+      array.forEach((data) => {
         console.log(data.data().title);
-        var tr = document.createElement("tr");
-        var td1 = document.createElement("td");
-        var textoTd1 = document.createTextNode(
-          data.data().title
-        );
+        const tr = document.createElement('tr');
+        const td1 = document.createElement('td');
+        const textoTd1 = document.createTextNode(data.data().title);
         td1.appendChild(textoTd1);
         tr.appendChild(td1);
-        var td2 = document.createElement("td");
-        var deleteButton = document.createElement('a');
-        deleteButton.className='eliminar';
-        var textoTd2 = document.createTextNode(
-          'Eliminar'
-        );
+        const td2 = document.createElement('td');
+        const deleteButton = document.createElement('a');
+        deleteButton.className = 'eliminar';
+        const textoTd2 = document.createTextNode('Eliminar');
         deleteButton.appendChild(textoTd2);
         deleteButton.onclick = () => {
           deleteNote(data.id);
@@ -162,16 +137,14 @@ export const start = () => {
         tr.appendChild(td2);
         tblBody.appendChild(tr);
       });
-    })
-    
+    });
+
     // posiciona el <tbody> debajo del elemento <table>
     tabla.appendChild(tblBody);
     // appends <table> into <body>
     div.appendChild(tabla);
-    // modifica el atributo "border" de la tabla y lo fija a "2";
-    //tabla.setAttribute("border", "2");
-
-  
+    // modifica el atributo 'border' de la tabla y lo fija a '2';
+    //tabla.setAttribute('border', '2');
   });
 
   return divStart;

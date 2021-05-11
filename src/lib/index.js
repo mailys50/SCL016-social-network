@@ -58,7 +58,7 @@ export const signOut = () => {
       
     });
 };
-// agregar nota en este caso recibe un string "textNewNote"
+// agregar nota en este caso recibe un string 'textNewNote'
 export const addComment = (textNewComment) => {
   return firebase.firestore().collection('comments').add({
     title: textNewComment,
@@ -67,11 +67,10 @@ export const addComment = (textNewComment) => {
 }
 // eliminar notas recibe como parametro el id de la nota que se desea eliminar
 export const deleteNote = (idNote) => {
-  console.log(idNote);
   return firebase.firestore().collection('comments').doc(idNote).delete()
 }
 // para traer todas las notas cada vez que se actualice en tiempo real gracias a onSnapshot actualiza
-export const getNotes  = (callback) => {
+export const getNotes  = () => {
   return firebase.firestore().collection('comments').get();
 }
 

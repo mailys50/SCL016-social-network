@@ -1,5 +1,5 @@
 export const contact = () => {
-  const divContact = document.createElement("div");
+  const divContact = document.createElement('div');
   const viewContact = `
     <body>
     <div class='contactContainer'>

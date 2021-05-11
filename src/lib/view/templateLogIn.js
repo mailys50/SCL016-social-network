@@ -1,9 +1,9 @@
-import { signIn } from "../index.js";
-import { google } from "../index.js";
-import { observer } from "../index.js";
-import { signOut } from "../index.js";
+import { signIn } from '../index.js';
+import { google } from '../index.js';
+import { observer } from '../index.js';
+import { signOut } from '../index.js';
 export const login = () => {
-  const divLogIn = document.createElement("div");
+  const divLogIn = document.createElement('div');
   const viewLogIn = `
   <div class='loginContainer'>
   <div class='header'>
@@ -50,26 +50,26 @@ export const login = () => {
 </div>`;
   divLogIn.innerHTML = viewLogIn;
   // google
-  const buttonGoogle2 = divLogIn.querySelector("#buttonGoogle2");
-  buttonGoogle2.addEventListener("click", () => {
+  const buttonGoogle2 = divLogIn.querySelector('#buttonGoogle2');
+  buttonGoogle2.addEventListener('click', () => {
     google();
-    location.href = "#/start";
+    location.href = '#/start';
   });
   // inicio de sesión
-  const buttonLogIn = divLogIn.querySelector("#buttonLogIn");
-  buttonLogIn.addEventListener("click", () => {
-    console.log("escucho cick");
-    let email2 = document.querySelector(".login-email");
-    let password2 = document.querySelector(".login-password");
+  const buttonLogIn = divLogIn.querySelector('#buttonLogIn');
+  buttonLogIn.addEventListener('click', () => {
+    console.log('escucho cick');
+    let email2 = document.querySelector('.login-email');
+    let password2 = document.querySelector('.login-password');
     email2 = email2.value;
     password2 = password2.value;
     signIn(email2, password2);
-    location.href = "#/start";
+    location.href = '#/start';
   });
   // mensaje usuario regietrado
   const message = () => {
-    const messageInvalid = divLogIn.querySelector(".message");
-    messageInvalid.innerHTML = "invalid email or password";
+    const messageInvalid = divLogIn.querySelector('.message');
+    messageInvalid.innerHTML = 'invalid email or password';
 
     observer(message);
   };
@@ -77,8 +77,8 @@ export const login = () => {
   // cerrar sesion
 
   const closeRecover = () => {
-    const buttonSignOff = divLogIn.querySelector("#signOff");
-    buttonSignOff.addEventListener("click", () => {
+    const buttonSignOff = divLogIn.querySelector('#signOff');
+    buttonSignOff.addEventListener('click', () => {
       signOut();
     });
     closeRecover();

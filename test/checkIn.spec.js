@@ -13,7 +13,7 @@ global.firebase = firebasemock.MockFirebaseSdk(
 
 
 
-import { register } from "../src/lib/index.js";
+import { register } from '../src/lib/index.js';
 
 describe('probando register', () => {
   it('Debería  registrar usuarios ', () => {
