@@ -438,6 +438,8 @@ git branch -l (para ver en que rama estoy)
 
 
 ## SEGUNDO SPRINT
+se modifica el prototipo:
+<img src="src\img\prototipo8.png" alt="prototipo" width="1000"/>
 se consigue regitrar el usuario con su correo y contraseña, se crean los templates de cada vista
 
 
@@ -447,14 +449,6 @@ se consigue regitrar el usuario con su correo y contraseña, se crean los templa
 -se implementa las funciones de comentario, y la suma de los like y mensajes realizados.
 
 ## CUARTO SPRINT
-
- ## QUINTO SPRINT
-
- 
-
-## SEXTO SPRINT
-
-
- ## TEST UNITARIO
-
+se aplica la funcion de eliminar comentarios y se realiza la modificacion de los test.
+se implementa el retorno a la pagina interior con history y se aplica el loclStorage en el conteo de like y mensajes enviados.
  

@@ -218,3 +218,14 @@ h2{
   grid-template-columns: 1fr 1fr;
   padding: 8%;
 }
+.buttonPublic{
+  padding: 10px;
+  width: 125%;
+ 
+}
+.public{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  max-width: 800px;
+}

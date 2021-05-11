@@ -19,12 +19,12 @@ global.firebase = new MockFirebase(fixtureData, {
   isNaiveSnapshotListenerEnabled: true,
 });
 
-import { addComment, getNotes, deleteNote } from '../src/lib/index.js';
+import { addComment, deleteNote } from '../src/lib/index.js';
 
 describe('addComment', () => {
   it('Debería agregar una nota', () => {
-    return addComment('comprar pan').then((comment) => {
-        expect(comment._data.title).toBe('comprar pan')
+    return addComment('hermoso paisaje').then((comment) => {
+        expect(comment._data.title).toBe('hermoso paisaje')
       })
   });
 })

@@ -1,5 +1,4 @@
-import { register } from '../index.js';
-import { google } from '../index.js';
+import { register, google } from '../index.js';
 export const checkin = () => {
   const divCheckIn = document.createElement('div');
   const viewCheckIn = `

@@ -1,7 +1,4 @@
-import { signIn } from '../index.js';
-import { google } from '../index.js';
-import { observer } from '../index.js';
-import { signOut } from '../index.js';
+import { signIn, google, observer, signOut  } from '../index.js';
 export const login = () => {
   const divLogIn = document.createElement('div');
   const viewLogIn = `
@@ -32,6 +29,8 @@ export const login = () => {
           placeholder='password'
         />
         <button id='buttonLogIn' class='buttonLogIn'>LogIn</button>
+      </div>
+      <div class='message'>      
       </div>
       <div class='recoverPassword'>
         <a href='#/recoverPassword' class='recoverPassword'>recover password</a>

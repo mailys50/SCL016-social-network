@@ -12,7 +12,7 @@ export const start = () => {
         <h1>ourist places</h1>
       </div>
       <div class='usuario'>
-        <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
+        <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' /></a>
       </div>
     </div>
     <div class='menu'>
@@ -40,15 +40,21 @@ export const start = () => {
       <h2>Start</h2>
     </div>
     <div class='generalList'>
+    <div class='usuario'>
+    <a title='profile' href='#/profile'><img src='img/usuarioDama.png' alt='profile' /></a>
+  </div>
+      <div class='public'>
+        <img class='buttonPublic' src='img/glaciares.jpg'  alt="imagen">
+      </div>
       <div class='userShared'>
         <div class='like'>
-          <input type='image' class='buttonLike' src='img/estrellaAzul.png' id='buttonLike' />
+          <input type='image' class='buttonLike' src='img/estrellaAzul1.png' id='buttonLike' />
         </div>
         <div class='writeComment'>
-          <input type='image' class='buttonCommet' src='img/mensaje1.png' id='buttonComment' />
+          <input type='image' class='buttonCommet' src='img/mensaje2.png' id='buttonComment' />
         </div>
         <div class='share'>
-          <input type='image' class='buttonShare' src='img/enviar1.png' id='buttonShare' />
+          <input type='image' class='buttonShare' src='img/enviar2.png' id='buttonShare' />
         </div>
       </div>
       <div class='sum'>
@@ -57,7 +63,7 @@ export const start = () => {
       </div>
       <div class='commentsUser'></div>
         <div class='comment'>
-          <label><img src='img/usuario1.png' alt='profile' /></label>
+          <label><img src='img/usuario2.png' alt='profile' /></label>
           <input type='text' name='comments' class='comments' placeholder='comments' />
           <div class='send'>
             <input type='image' class='buttonSend' src='img/mas.png' id='buttonSend' alt='button Send' />
@@ -67,16 +73,16 @@ export const start = () => {
     </div>
     <div class='footer'>
       <div class='inicio'>
-        <a title='home' href='#/start'><img src='img/casa.png' alt='home' /></a>
+        <a title='home' href='#/start'><img src='img/casa1.png' alt='home' /></a>
       </div>
       <div class='favorito'>
-        <a title='favorite' href='#/favorite'><img src='img/estrella.png' alt='Favorite' /></a>
+        <a title='favorite' href='#/favorite'><img src='img/estrella1.png' alt='Favorite' /></a>
       </div>
       <div class='shops'>
-        <a title='shops' href='#/shops'><img src='img/tienda.png' alt='shops' /></a>
+        <a title='shops' href='#/shops'><img src='img/tienda1.png' alt='shops' /></a>
       </div>
       <div class='usuario'>
-        <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>
+        <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' /></a>
       </div>
     </div>
   </div>`;
