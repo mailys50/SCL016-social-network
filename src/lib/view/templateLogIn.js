@@ -14,33 +14,34 @@ export const login = () => {
     <div class='tituloRegistro'>
       <h2 class='Log In'>User register</h2>
     </div>
-    <div class='menuLogIn'>
-      <div  class='formRegistro'>
-      <label class='adress'>Email Adress</label>
-          <input
-          type='email'
-          name='email'
-          class='login-email'
-          placeholder='E-mail'
+    <div class='contLogIn'>
+      <div  class='formLogIn'>
+        <label class='adress'>Email Adress</label>
+           <input
+           type='email'
+           name='email'
+           class='login-email'
+           placeholder='E-mail'
         />
         <label class='password'>Enter password</label>
         <input
-          type='password'
-          name='password'
-          class='login-password'
-          placeholder='password'
+           type='password'
+           name='password'
+           class='login-password'
+           placeholder='password'
         />
+      </div>
+      <div class='logIn'>  
         <button id='buttonLogIn' class='buttonLogIn'>LogIn</button>
       </div>
-      </div>
-      <div class='message'>      
-      </div>
-      <div class='recoverPassword'>
-        <a href='#/recoverPassword' class='recoverPassword'>recover password</a>
-      </div>
-      <div class='close' id='close'>
-        <button id='signOff' class='buttonSignOff'>Sign off</button>
-      </div>
+    </div>
+    <div class='message'>      
+    </div>
+    <div class='recoverPassword'>
+      <a href='#/recoverPassword' class='recoverPassword'>recover password</a>
+    </div>
+    <div class='close' id='close'>
+      <button id='signOff' class='buttonSignOff'>Sign off</button>
     </div>
     <div class='google'>
       <button id='buttonGoogle2' class='buttonGoogle2'>

@@ -1,6 +1,6 @@
-import { register, google } from '../index.js';
+import { register, google } from "../index.js";
 export const checkin = () => {
-  const divCheckIn = document.createElement('div');
+  const divCheckIn = document.createElement("div");
   const viewCheckIn = `
     <div class='containerCheckin'>
       <div class='header'>
@@ -14,16 +14,16 @@ export const checkin = () => {
       <div class='tituloRegistro'>
         <h2 class='User register'>User register</h2>
       </div>
-      <div class='menuChekIn'>
+      <div class='contChekIn'>
         <div class='formChekIn'>
           <label class='adress'>Email Adress</label>
             <input type='email' name='email' class='checkin-email' placeholder='E-mail'>      
           <label class='password'>Enter  6 digit password</label>
             <input type='password' name='contraseña' class='checkin-password' paceholder='password'>
-          <div class='checkIn'>  
-            <button id='buttonCheckIn' class='buttonCheckIn'>'Check In'</button>
-          </div>  
-        </div>             
+        </div>
+        <div class='checkIn'>  
+          <button id='buttonCheckIn' class='buttonCheckIn'>'Check In'</button>
+        </div>              
       </div>
       <div class='google'>
         <button id='buttonGoogle' class='buttonGoogle'>checkin with Google</button>
@@ -31,19 +31,19 @@ export const checkin = () => {
     </div>`;
   divCheckIn.innerHTML = viewCheckIn;
 
-  const buttonGoogle = divCheckIn.querySelector('.buttonGoogle');
-  buttonGoogle.addEventListener('click', () => {
+  const buttonGoogle = divCheckIn.querySelector(".buttonGoogle");
+  buttonGoogle.addEventListener("click", () => {
     google();
-    location.href = '#/start';
+    location.href = "#/start";
   });
-  const buttonCheckIn = divCheckIn.querySelector('#buttonCheckIn');
-  buttonCheckIn.addEventListener('click', () => {
-    let email = document.querySelector('.checkin-email');
-    let password = document.querySelector('.checkin-password');
+  const buttonCheckIn = divCheckIn.querySelector("#buttonCheckIn");
+  buttonCheckIn.addEventListener("click", () => {
+    let email = document.querySelector(".checkin-email");
+    let password = document.querySelector(".checkin-password");
     email = email.value;
     password = password.value;
     register(email, password);
-    location.href = '#/start';
+    location.href = "#/start";
   });
 
   return divCheckIn;
