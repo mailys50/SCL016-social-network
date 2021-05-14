@@ -5,15 +5,15 @@ export const start = () => {
   const viewStart = `
   <div class='startContainer'>
     <div class='header'>
-      <div class='logo'>
-        <img src='img/logotipo.png' alt='logo' />
-      </div>
-      <div class='title'>
-        <h1>ourist places</h1>
-      </div>
-      <div class='usuario'>
-        <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' /></a>
-      </div>
+     <div class='logo'>
+       <img src='img/palmerita.png' class='logotipo'alt='logo'>
+     </div>
+     <div class='title'>
+      <h1>ourist places</h1>
+     </div>
+     <div class='usuario'>
+       <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' class= 'user2' /></a>
+     </div>
     </div>
     <div class='menu'>
       <ul>
@@ -35,51 +35,50 @@ export const start = () => {
       </ul>
     </div>
     <div class='containerStart'>    
-    </div>
-    <div>
-      <h2>Start</h2>
-    </div>
-    <div class='generalList'>
-    <div class='usuario'>
-    <a title='profile' href='#/profile'><img src='img/usuarioDama.png' class= 'user' alt='profile' /></a>
-  </div>
-      <div class='public'>
-        <img class='buttonPublic' src='img/glaciares.jpg'  alt="imagen">
+      <div class='subtitulo'>
+        <h2>Start</h2>
       </div>
-      <div class='userShared'>
-        <div class='like'>
-          <input type='image' class='buttonLike' src='img/estrellaAzul1.png' id='buttonLike' />
+      <div class='generalList'>
+        <div class='usuario'>
+          <a title='profile' href='#/profile'><img src='img/usuarioDama.png' class= 'user1' alt='profile' /></a>
         </div>
-        <div class='writeComment'>
-          <input type='image' class='buttonCommet' src='img/mensaje2.png' id='buttonComment' />
+        <div class='public'>
+          <img class='buttonPublic' src='img/glaciares.jpg'  alt="imagen">
         </div>
-        <div class='share'>
-          <input type='image' class='buttonShare' src='img/enviar2.png' id='buttonShare' />
-        </div>
-      </div>
-      <div class='sum'>
-        <div class='likeSum'></div>
-        <div class='commentSum'></div>
-      </div>
-      <div class='commentsUser'></div>
-        <div class='comment'>
-          <label><img src='img/usuario2.png' alt='profile' class= 'user'/></label>
-          <input type='text' name='comments' class='comments' placeholder='comments' />
-          <div class='send'>
-            <input type='image' class='buttonSend' src='img/mas.png' id='buttonSend' alt='button Send' />
-            <input type='image' class='buttonDelete eliminar' src='img/menos.png' id='buttonDelete' alt='button delete' />
+        <div class='userShared'>
+          <div class='like'>
+            <input type='image' class='buttonLike' src='img/estrellaAzul1.png' id='buttonLike' />
           </div>
+          <div class='writeComment'>
+            <input type='image' class='buttonCommet' src='img/mensaje2.png' id='buttonComment' />
+          </div>
+          <div class='share'>
+           <input type='image' class='buttonShare' src='img/enviar2.png' id='buttonShare' />
+          </div>
+       </div>
+       <div class='sum'>
+         <div class='likeSum'></div>
+         <div class='commentSum'></div>
+       </div>
+       <div class='commentsUser'></div>
+         <div class='comment'>
+           <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' class= 'user1' /></a>
+           <input type='text' name='comments' class='comments' placeholder='comments' />
+           <div class='send'>
+             <input type='image' class='buttonSend' src='img/mas.png' id='buttonSend' alt='button Send' />
+             <input type='image' class='buttonDelete eliminar' src='img/menos.png' id='buttonDelete' alt='button delete' />
+           </div>
+        </div>
       </div>
-    </div>
     <div class='footer'>
       <div class='inicio'>
-        <a title='home' href='#/start'><img src='img/casa1.png' alt='home' class= 'home' /></a>
+        <a title='home' href='#/start'><img src='img/home.png' alt='home' class= 'home' /></a>
       </div>
       <div class='favorito'>
-        <a title='favorite' href='#/favorite'><img src='img/estrella1.png' class= 'start' alt='Favorite' /></a>
+        <a title='favorite' href='#/favorite'><img src='img/start.png' class= 'start' alt='Favorite' /></a>
       </div>
       <div class='shops'>
-        <a title='shops' href='#/shops'><img src='img/tienda1.png' alt='shops' class= 'shops'/></a>
+        <a title='shops' href='#/shops'><img src='img/tienda8.png' alt='shops' class= 'shops'/></a>
       </div>
       <div class='usuario'>
         <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' class= 'user' /></a>
@@ -117,7 +116,6 @@ export const start = () => {
   const buttonComment = divStart.querySelector('.buttonCommet');
   buttonComment.addEventListener('click', () => {
     // Obtener la referencia del elemento body
-
     const div = document.querySelector('.commentsUser');
     div.innerHTML='';
     // Crea un elemento <table> y un elemento <tbody>
@@ -125,7 +123,7 @@ export const start = () => {
     const tblBody = document.createElement('tbody');
     getNotes().then((array) => {
       array.forEach((data) => {
-        console.log(data.data().title);
+        console.log(data);
         const tr = document.createElement('tr');
         const td1 = document.createElement('td');
         const textoTd1 = document.createTextNode(data.data().title);

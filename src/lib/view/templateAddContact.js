@@ -4,11 +4,11 @@ export const addContact = () => {
     <div class='addContainer'>
       <div class='header'>
         <div class='logo'>
-          <img src='img/logotipo.png' alt='logo'>
+          <img src='img/palmerita.png' class='logotipo'alt='logo'>
         </div>
-        <div class='title'>
-         <h1>ourist places</h1>
-        </div>
+      <div class='title'>
+        <h1>ourist places</h1>
+      </div>
       </div>
       <div class='foto2'> 
         <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a></div>

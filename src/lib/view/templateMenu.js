@@ -1,9 +1,9 @@
 export const menu = () => {
-  const viewMenu = `
+  const viewMenu = /*html*/`
   <div class='menuContainer'>
-    <div class='header'>
+    <div class='header ' >
       <div class='logo'>
-        <img src='img/logotipo.png' alt='logo'>
+        <img src='img/palmerita.png' class='logotipo'alt='logo'>
       </div>
       <div class='title'>
          <h1>ourist places</h1>
@@ -11,10 +11,10 @@ export const menu = () => {
     </div>
     <div class='menu1'>
       <ul>
-        <li>
+        <li class='liUno'>
           <a href='#/checkIn'>Check In</a>
         </li>
-        <li>
+        <li class='liDos'>
         <a href='#/logIn'>Log In</a>
         </li>        
       </ul>

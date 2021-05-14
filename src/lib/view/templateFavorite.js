@@ -2,13 +2,13 @@ export const favorite = () => {
   const divFavorite = document.createElement('div');
   const viewFavorite = `
   <div class='favoriteContainer'>
-      <div class='header'>
-        <div class='logo'>
-          <img src='img/logotipo.png' alt='logo' />
-        </div>
-        <div class='title'>
-          <h1>ourist places</h1>
-        </div>
+    <div class='header'>
+      <div class='logo'>
+        <img src='img/palmerita.png' class='logotipo'alt='logo'>
+      </div>
+      <div class='title'>
+       <h1>ourist places</h1>
+      </div>
       </div>      
         <div class='usuario'>
         <a title='profile' href='#/profile'><img src='img/usuario1.png' alt='profile' /></a>

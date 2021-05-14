@@ -4,7 +4,7 @@ export const shops = () => {
     <div class='shopsContainer'>
         <div class='header'>
           <div class='logo'>
-            <img src='img/logotipo.png' alt='logo' />
+          <img src='img/palmerita.png' class='logotipo'alt='logo'>
           </div>
           <div class='title'>
             <h1>ourist places</h1>
