@@ -40,30 +40,19 @@ export const addContact = () => {
           <div class='subtitulo'>
             <h2>Add Contact</h2>
           </div>
-         <div class='contAddContact'>
-           <div class='formAddContact'>
-             <label class='adress'>Nombre</label>
-             <input type='text' name='contacto' class='checkin-email' placeholder='nombre'>    
-             <label class='adress'>Email Adress</label>
-             <input type='email' name='email' class='checkin-email' placeholder='E-mail'>    
-           </div>
-           <div class='AddContact'>  
-          <button id='buttonAddContact' class='buttonAddContact'>'Add'</button>
-        </div>
-      <div class='footer'>
-        <div class='inicio'>
-          <a title='home' href='#/start'><img src='img/home.png' alt='home' class= 'home' /></a>
-        </div>
-        <div class='favorito'>
-          <a title='favorite' href='#/favorite'><img src='img/start.png' class= 'start' alt='Favorite' /></a>
-        </div>
-        <div class='shops'>
-          <a title='shops' href='#/shops'><img src='img/tienda8.png' alt='shops' class= 'shops'/></a>
-        </div>
-        <div class='usuario'>
-          <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' class= 'user4' /></a>
-        </div>
-      </div>
+          <div class='contAddContact'>
+            <div class='formAddContact'>
+              <label class='adress'>Nombre</label>
+                <input type='text' name='contacto' class='checkin-email' placeholder='nombre'>    
+              <label class='adress'>Email Adress</label>
+                <input type='email' name='email' class='checkin-email' placeholder='E-mail'>    
+            </div>
+            <div class='AddContact'>  
+              <button id='buttonAddContact' class='buttonAddContact'>'Add'</button>
+            </div>
+          </div>
+        </div> 
+      </div> 
     </div>`;
   divAddContact.innerHTML = viewAddContact;
     const buttonBack1 = divAddContact.querySelector('#backAdd');
