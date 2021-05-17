@@ -2,19 +2,22 @@ export const recoverPassword = () => {
   const divRecoverPassword = document.createElement('div');
   const viewRecoverPassword =  `
     <div class='recoverpassword'>
-        <div class='header'>
-          <div class='logo'>
+      <div class='header'>
+        <div class='logo'>
           <img src='img/palmerita.png' class='logotipo'alt='logo'>
-          </div>
-          <div class='title'>
-            <h1>ourist places</h1>
-          </div>
-          <div class='back'>
+        </div>
+        <div class='back1'>
+          <a id ='back' class ='back'><img src='img/volver8.png' alt='profile' /></a>
+        </div>
+        <div class='title'>
+          <h1>ourist places</h1>
+        </div>
+        <div class='back'>
           <a id ='back1' class ='back'><img src='img/volver.png' alt='profile' /></a>
         </div>
-        </div>
-        <div class='recoverPassword<'>
-          <div>
+      </div>
+      <div class='recoverPassword'>
+        <div class='subtitulo'>
             <h2>Recover Password</h2>
           </div>
           <input
@@ -30,6 +33,7 @@ export const recoverPassword = () => {
       </div> `;
 
   divRecoverPassword.innerHTML = viewRecoverPassword;
+  
   const buttonBack1 = divRecoverPassword.querySelector('#back1');
   buttonBack1.addEventListener('click', e => {
   history.back();

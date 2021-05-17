@@ -62,7 +62,7 @@ export const signOut = () => {
 export const addComment = (textNewComment) => {
   return firebase.firestore().collection('comments').add({
     title: textNewComment,
-    date:new Date()
+    date:new Date(),
   })
 }
 // eliminar notas recibe como parametro el id de la nota que se desea eliminar
