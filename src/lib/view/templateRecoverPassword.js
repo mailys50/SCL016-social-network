@@ -16,7 +16,7 @@ export const recoverPassword = () => {
           <a id ='back1' class ='back'><img src='img/volver.png' alt='profile' /></a>
         </div>
       </div>
-      <div class='recoverPassword'>
+      <div class='passwordRecover'>
         <div class='subtitulo'>
             <h2>Recover Password</h2>
           </div>

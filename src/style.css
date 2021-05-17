@@ -174,10 +174,22 @@ h2 {
   text-transform: uppercase;
   padding: 1em;
 }
-.buttonLogIn, .buttonAddContact
+.buttonLogIn:hover,
+.buttonLogIn:focus {
+  background: #b77cd3;
+  color: #9a04e0;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
 .buttonCheckIn:hover,
-.buttonLogIn, .buttonAddContact
 .buttonCheckIn:focus {
+  background: #b77cd3;
+  color: #9a04e0;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+.buttonAddContact:hover,
+.buttonAddContact:focus {
   background: #b77cd3;
   color: #9a04e0;
   transition: background-color 1s ease-out;
@@ -193,12 +205,14 @@ h2 {
 .buttondelete {
   width: 5%;
 }
-.startContainer {
+.startContainer, .addContainer, .contactContainer, .favoriteContainer, .profileContainer, .recoverpassword, .shopsContainer {
   background-color: #8fceca;
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
   display: grid;
   grid-template-columns: 109%;
+  width:100%;
+  height:100%;
   column-gap: 10px;
   row-gap: 30px;
 }
@@ -298,25 +312,52 @@ h2 {
   text-align: initial;
   margin: -9% 0% 0% 0%;
 }
+.footerShops {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 1%;
+  text-align: initial;
+  margin: 43% 0% 0% 0%;
+}
+.footerContact {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 1%;
+  text-align: initial;
+  margin: 119% 0% 0% 0%;
+}
 .home {
   width: 40%;
+  align-items: stretch;
+
+  align-content: end;
 }
 .start {
   width: 40%;
+  align-items: stretch;
+
+  align-self: end;
 }
 .shops {
   width: 61%;
+  align-items: stretch;
+
+  align-self: end;
 }
 .user4 {
   width: 44%;
+  align-items: stretch;
+
+  align-self: end;
 }
-.favoriteList{
+.favoriteList {
   display: grid;
   grid-template-columns: 27% 27%;
   grid-template-rows: 30% 30% 30%;
   row-gap: 0%;
   column-gap: 21%;
 }
+
 .public1{
   padding: 10px;
   text-align: center; 
@@ -383,7 +424,25 @@ h2 {
   top: 280px;
   border-radius: 10px;
 }
-
+.shopsList {
+  display: grid;
+  grid-template-columns: 27% 27%;
+  grid-template-rows: 62% 62%;
+  row-gap: 0%;
+  column-gap: 21%;
+}
+.pasajes {
+   width: 150%;
+  }
+  .paquetes {
+   width: 150%;
+  }
+  .hotel {
+  width: 150%;
+  }
+  .restaurant {
+  width: 150%;
+  }
 
 
 
@@ -528,11 +587,6 @@ h2 {
   .buttonDelete {
     visibility: hidden;
   }
-  .footer {
-    /* display: grid;
-    grid-template-columns: 25% 25% 25% 25%; */
-    margin: 0%;
-   }
   .home {
    visibility: hidden;
   }

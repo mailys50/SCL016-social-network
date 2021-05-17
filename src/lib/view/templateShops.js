@@ -11,50 +11,49 @@ export const shops = () => {
         </div>
         <div class='usuario'>
           <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' class= 'user1' /></a>
-       </div>
-       <div class='back1'>
+        </div>
+        <div class='back1'>
           <a id ='backshops' class ='back'><img src='img/volver8.png' alt='profile' /></a>
         </div>
       </div>
       <div class='menu'>
         <ul>
-            <li>
-              <a href='#/AddContact'>AddContact</a>
-            </li>
-            <li>
-              <a href='#/contact'>Contact</a>
-            </li>
-            <li>
-              <a href='#/favorite'>Favorite </a>
-            </li>
-            <li>
-              <a href='#/shops'>Shops</a>
-            </li>
-            <li>
-              <a href='#/start'>start</a>
-            </li>
-          </ul>
-        </div>
-        <div class='containerShops'>
+          <li>
+            <a href='#/AddContact'>AddContact</a>
+          </li>
+          <li>
+            <a href='#/contact'>Contact</a>
+          </li>
+          <li>
+            <a href='#/favorite'>Favorite </a>
+          </li>
+          <li>
+            <a href='#/shops'>Shops</a>
+          </li>
+          <li>
+            <a href='#/start'>start</a>
+          </li>
+        </ul>
+      </div>
+      <div class='containerShops'>
         <div class='subtitulo'>
-            <h2>Shops</h2>
-          </div>
-          <div class='menu'>         
-          <div class='shops1'>
-            <div class='usuario'>
-              <a  ><img src='img/avion.png' alt='imagen Pasajes'class='pasajes' /></a>
-            </div>
-            <div class='usuario'>
+          <h2>Shops</h2>
+        </div>  
+        <div class='shopsList'>    
+        <div class='shops1'>
+          <a  ><img src='img/avion.png' alt='imagen Pasajes'class='pasajes' /></a>
+        </div>
+          <div class='shops2'>
               <a ><img src='img/paquetes2.png' alt='imagen paquetes' class='paquetes' /></a>
             </div>
-            <div class='usuario'>
-              <a ><img src='img/hotel.png' alt='imagen hotel'class='hotel' /></a>
+            <div class='shops3'>
+              <a ><img src='img/hotel.png' alt='imagen hotel' class='hotel' /></a>
             </div>
-            <div class='usuario'>
+            <div class='shops4'>
               <a ><img src='img/restaurant.png' alt='imagen restaurant' class='restaurant' /></a>
             </div>
           </div>
-          <div class='footer'>
+          <div class='footerShops'>
             <div class='inicio'>
               <a title='home' href='#/start'><img src='img/home.png' alt='home' class= 'home' /></a>
             </div>
@@ -68,7 +67,8 @@ export const shops = () => {
               <a title='profile' href='#/profile'><img src='img/usuario2.png' alt='profile' class= 'user4' /></a>
             </div>
           </div>
-        </div>`;
+        </div>
+      </div>`;
 
   divShops.innerHTML = viewShops;
     const buttonBackshops = divShops.querySelector('#backshops');
