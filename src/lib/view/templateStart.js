@@ -132,42 +132,40 @@ export const start = () => {
     const tabla = document.createElement('table');
     const tblBody = document.createElement('tbody');
     getNotes().then((array) => {
-      array.forEach((data) => {
-        console.log(data);
-        // const tr = document.createElement('tr');
-        // const td1 = document.createElement('td');
-        // const numberTd1 = document.createTextNode(data.data().title);
-        // console.log(t);
-        // td1.appendChild(numberTd1);
-        // tr.appendChild(td1);
-
-        const tr = document.createElement('tr');
-        const td2 = document.createElement('td');
-        const textoTd2 = document.createTextNode(data.data().title);
-        td1.appendChild(textoTd2);
-        tr.appendChild(td2);
-
-        const td3 = document.createElement('td');
-        const deleteButton = document.createElement('a');
-        deleteButton.className = 'eliminar';
-        const textoTd3 = document.createTextNode('Eliminar');
-        deleteButton.appendChild(textoTd3);
+      array.forEach(data => {
+        console.log(data.data().title);
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var textoTd1 = document.createTextNode(
+          data.data().title
+        );
+        td1.appendChild(textoTd1);
+        tr.appendChild(td1);
+        var td2 = document.createElement("td");
+        var deleteButton = document.createElement('a');
+        deleteButton.className='eliminar';
+        var textoTd2 = document.createTextNode(
+          'Eliminar'
+        );
+        deleteButton.appendChild(textoTd2);
         deleteButton.onclick = () => {
           deleteNote(data.id);
           tr.remove();
         };
-        td3.appendChild(deleteButton);
-        tr.appendChild(td3);
+        td2.appendChild(deleteButton);
+        tr.appendChild(td2);
         tblBody.appendChild(tr);
       });
-    });
+    })
 
     // posiciona el <tbody> debajo del elemento <table>
     tabla.appendChild(tblBody);
     // appends <table> into <body>
     div.appendChild(tabla);
-    // modifica el atributo 'border' de la tabla y lo fija a '2';
-    //tabla.setAttribute('border', '2');
+    // modifica el atributo "border" de la tabla y lo fija a "2";
+    //tabla.setAttribute("border", "2");
+
+
   });
 
   return divStart;

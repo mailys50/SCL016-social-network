@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 body {
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
   font-family: Rockwell, sans-serif;
   background-image: url(img/gaviota.jpg);
@@ -218,7 +220,7 @@ h2 {
 }
 .header1 {
   display: grid;
-  grid-template-columns: 29% 43% 13% 14%;
+  grid-template-columns: 25% 37% 13% 14%;
   column-gap: 3px;
 }
 .logotipo1 {
